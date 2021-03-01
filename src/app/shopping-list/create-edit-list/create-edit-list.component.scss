@@ -1,0 +1,66 @@
+ion-content {
+    --ion-background-color: #F7F8FA;
+}
+
+.back-operation {
+    display: flex;
+    padding: 30px;
+    justify-content: flex-start;
+
+    span {
+        font-size: 25px;
+    }
+}
+
+.sub-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    span {
+        font-weight: 500;
+        color: #695EFC;
+        font-size: 20px;
+        font-family: 'Futura LT';
+    }
+}
+
+.button-wrapper {
+    margin-top: 40px;
+    padding-left: 15px;
+}
+
+.form-container {
+    padding-left: 20px;
+    padding-right: 35px;
+}
+
+.checkbox-area {
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-right: -20px;
+    margin-top: 20px;
+
+    ion-checkbox {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    span {
+        font-family: 'Futura LT';
+        color: #000000;
+
+        &.label-text {
+            width: 109px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        &.info-text {
+            font-size: 8px;
+        }
+    }
+}

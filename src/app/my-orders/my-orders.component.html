@@ -1,0 +1,9 @@
+<div class="my-orders">
+  <app-header label="My orders"></app-header>
+  <div class="last-months">
+    <p>{{orderInfos.length}} orders</p>
+  </div>
+  <div *ngFor="let order of orderInfos">
+    <order-preview [order]="order"></order-preview>
+  </div>
+</div>

@@ -1,0 +1,4 @@
+<app-main-header *ngIf="type=== 'MAIN'"></app-main-header>
+<app-product-header *ngIf="type=== 'PRODUCT'" [disableDeaher]="disableHeader"></app-product-header>
+<app-base-header *ngIf="type=== 'BASE'"></app-base-header>
+<app-navigation-header *ngIf="!type" [label]="label"></app-navigation-header>

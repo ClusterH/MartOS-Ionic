@@ -1,0 +1,16 @@
+<div class="item-container" >
+  <span class="go-direction" (click)="goToLocation()">
+    Go
+  </span>
+  <div class="info">
+    <div class="name">
+      {{item.name}}
+    </div>
+    <div class="type" *ngIf="item.type===shoppingListType.Permanent">
+      <span>Permanent</span>
+    </div>
+  </div>
+  <div class="articles-count">
+    <span class="number">{{item.productsCount}} </span> <span>articles </span> <span *ngIf="item.productsCount<5">left</span>
+  </div>
+</div>

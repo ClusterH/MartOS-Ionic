@@ -1,0 +1,90 @@
+<div class="shipping-page">
+  <!-- ITEMS -->
+  <div class="order-detail">
+    <h3>Delivery mode</h3>
+    <ion-card class="delivery-mode">
+      <span class="delivery-mode-title">Select a delivery method</span>
+      <div class="delivery-choice">
+        <div class="delivery-image">
+          <img src="../../../../assets/images/car.png" alt="" />
+        </div>
+        <div class="delivery-info">
+          <span class="delivery-type">Pick up in store</span>
+          <div class="addmpa">
+            <img src="../../../../assets/images/map-marker.svg" alt="" />
+            <span>Brut</span>
+          </div>
+        </div>
+        <div class="delivery-status">
+          <input type="radio" id="pickup" name="delivery-group" />
+          <label for="pickup"></label>
+          <span>(Gratuit)</span>
+        </div>
+      </div>
+      <div class="delivery-choice">
+        <div class="delivery-image">
+          <img src="../../../../assets/images/scooter.png" alt="" />
+        </div>
+        <div class="delivery-info">
+          <span class="delivery-type"
+            >Delivery ({{ cart?.onlineArticles?.length }} items)</span
+          >
+          <div class="addmpa">
+            <img src="../../../../assets/images/map-marker.svg" alt="" />
+            <span>Shipping Address</span>
+          </div>
+        </div>
+        <div class="delivery-status">
+          <input type="radio" id="delivery" name="delivery-group" checked />
+          <label for="delivery"></label>
+          <span>($6.00)</span>
+        </div>
+      </div>
+    </ion-card>
+
+    <div class="divider"></div>
+
+    <ion-card class="shipping-address" *ngIf="defaultBilling">
+      <div class="title">
+        <h3>Shipping Address</h3>
+        <a (click)="changeAddress(true)" class="btn-change">Change</a>
+      </div>
+
+      <div class="shipping-container">
+        <div class="user-image">
+          <img src="../../../../assets/images/avatar.png" />
+        </div>
+        <div class="shipping-info">
+          <h4>{{user.name}} {{user.lastName}}</h4>
+          <span class="shipping-info-address">{{address.address}}</span>
+          <span class="shipping-info-address">{{address.optionalInfo}}, {{address.postcode}} {{address.city}}</span>
+          <span class="shipping-info-tel">{{user.phoneNumber}}</span>
+        </div>
+      </div>
+    </ion-card>
+
+    <ion-card class="payment" *ngIf="defaultPayment" style="margin-top: 30px">
+      <div class="title">
+        <h3>Payment Method</h3>
+      </div>
+
+      <div class="payment-container">
+        <div class="payment-item">
+          <div class="payment-item-image">
+            <img src="../../../../assets/images/visa.png" />
+          </div>
+          <div class="payment-item-number">
+            <span class="hidden-nmbr">**** **** ****</span
+            ><span class="view-nmbr">{{
+              cardsUser.number
+            }}</span>
+          </div>
+          <div class="payment-item-status">
+            <input type="radio" id="payment" name="payment-group" checked />
+            <label for="payment"></label>
+          </div>
+        </div>
+        <a (click)="changePayment()" class="btn-change">Change</a>
+      </div>
+    </ion-card>
+</div>

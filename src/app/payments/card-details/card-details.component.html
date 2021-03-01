@@ -1,0 +1,50 @@
+<div class="add-card-page">
+  <div class="payment-header">
+    <div class="back-arr" (click)="backClicked()">
+      <img src="../../../../../assets/images/back-arrow.svg" alt="">
+    </div>
+    <h2 *ngIf="id===0">Add Card</h2>
+    <h2 *ngIf="id>0">Edit Card</h2>
+  </div>
+  <div class="empty-margin-header"></div>
+  <div class="card-img">
+    <div class="visa-img">
+      <img src="../../../assets/images/visa.svg" alt="">
+    </div>
+    <h3>Jane Doe</h3>
+    <p>1234 5678 908</p>
+  </div>
+  <div class="form-paym">
+    <form [formGroup]="cardDetailsForm" #f="ngForm" (submit)="updateCard()">
+      <div class="form-pay-flex">
+        <div class="pay-form-fields">
+          <label for="">Full Name</label>
+          <input formControlName="firstName" type="text" placeholder="Jane Doe" />
+          <span class="err-msg" *ngIf="f.submitted  && control['firstName'].errors && control['firstName'].errors.required"> This is required  </span>
+        </div>
+        <div class="pay-form-fields">
+          <label for="">Card Number</label>
+          <input formControlName="cardNumber" type="number" placeholder="1234 5678 908" />
+          <span class="err-msg" *ngIf="f.submitted  && control['cardNumber'].errors && control['cardNumber'].errors.required"> This is required </span>
+        </div>
+        <div class="pay-form-fields half">
+          <label for="">Expiry Date</label>
+          <input type="month" formControlName="expiryDate" placeholder="12 / 2022" />
+          <span class="err-msg" *ngIf="f.submitted  && control['expiryDate'].errors && control['expiryDate'].errors.required"> This is required </span>
+        </div>
+        <div class="pay-form-fields half">
+          <label for="">CVV</label>
+          <input formControlName="cvv" type="number" placeholder="010" />
+          <span class="err-msg" *ngIf="f.submitted  && control['cvv'].errors && control['cvv'].errors.required"> This is required </span>
+        </div>
+      </div>
+      <div class="save-card">
+        <p>Save card for your next order</p><ion-toggle color="light" checked formControlName="isEnabled"></ion-toggle>
+      </div>
+      <div class="pay-add-btn">
+        <button *ngIf="id===0" type="submit">Add Card</button>
+        <button *ngIf="id>0" type="submit">Save</button>
+      </div>
+    </form>
+  </div>
+</div>

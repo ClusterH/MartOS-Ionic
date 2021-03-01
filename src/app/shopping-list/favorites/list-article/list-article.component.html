@@ -1,0 +1,59 @@
+<div class="container">
+
+  <div class="delete" [ngClass]="disableButtons?'hidden':''">
+    <span class="material-icons" (click)="deleteArticle()">
+      delete
+    </span>
+  </div>
+  <div class="item-info" [ngStyle]="{'opacity':article.totalStock===0?'0.3':''}">
+    <div class="article-image">
+      <img [src]="article.urls[0]" />
+    </div>
+    <div class="article-info">
+      <div class="top-section">
+        <div class="name">
+          {{article.name}}
+        </div>
+        <div class="price">
+          {{article.price}}$
+        </div>
+      </div>
+
+      <div class="options">
+        <ng-container *ngFor="let option of article.options">
+          <span>{{option.name}}:{{option.value}}</span>
+        </ng-container>
+      </div>
+
+      <div class="store-info">
+        <div class="location">
+          <span class="material-icons">
+            location_on
+          </span>
+        </div>
+        <div class="store-name">
+          Family business
+        </div>
+        <div class="store-status">
+          Closed
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="add-to-list" [ngClass]="disableButtons?'hidden':''">
+    <ng-container *ngIf="article.totalStock<5">
+      <div class="stock-container" *ngIf="article.totalStock>0">
+        <span class="count">{{article.totalStock}} </span> <span>left in stock</span>
+      </div>
+      <div class="stock-container" *ngIf="article.totalStock===0">
+        <span>Out Of stock</span>
+      </div>
+
+    </ng-container>
+    <div class="add-to-btn">
+      <span class="material-icons" (click)="addTo()">
+        playlist_add
+      </span>
+    </div>
+  </div>
+</div>

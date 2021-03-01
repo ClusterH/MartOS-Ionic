@@ -1,0 +1,12 @@
+<ion-grid>
+  <ion-row>
+    <ion-col size="12">
+      <ion-slides pager="true" [options]="slideOptsOne" #slideWithNav
+        (ionSlideDidChange)="SlideDidChange(sliderOne,slideWithNav)">
+        <ion-slide class="prod-slider-img"  *ngFor="let s of sliderOne.slidesItems;let i=index">
+          <img [src]="s.src">
+        </ion-slide>
+      </ion-slides>
+    </ion-col>
+  </ion-row>
+</ion-grid>

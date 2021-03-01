@@ -1,0 +1,47 @@
+.select-color-size {
+    background: #F7F8FA;
+    padding: 20px 20px;
+    h3 {
+        color: #231F20;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-family: 'Futura Md BT';
+        margin: 0;
+        letter-spacing: 1px;
+    }
+    .colors-wrap{
+        display: flex;
+        padding: 15px 0 0 0;
+        .color {
+            width: 38px;
+            height: 38px;
+            border-radius: 50px;
+            margin-right: 20px;
+        }
+    }
+    .sizes {
+        padding: 30px 0 0 0;
+        .sizes-wrapp {
+            padding: 15px 0 0;
+        }
+    }
+}
+.color.active-color{
+    border:2px solid #FD6969;
+}
+.color.active {
+    position: relative;
+}
+
+.color.active:before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 12px;
+    top: 11px;
+    left: 15px;
+    display: inline-block;
+    border-bottom: 2px solid #FD6969;
+    border-right: 2px solid #FD6969;
+    transform: rotate(35deg);
+}

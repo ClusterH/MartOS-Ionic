@@ -1,0 +1,15 @@
+<ion-content>
+  <div class="back-operation" (click)="backClicked()">
+    <span class="material-icons">
+      keyboard_arrow_left
+    </span>
+  </div>
+  <div class="sub-title">
+    <span>Add To shopping List</span>
+  </div>
+  <app-list-article [article]="article" [disableButtons]="true"></app-list-article>
+  <ion-button expand="block" color="tertiary" (click)="createList()">
+    <span>Create a new Shopping List</span>
+  </ion-button>
+  <app-shopping-list-add-item *ngFor="let item of lists" [item]="item" (addToList)="addArticleToList($event)"></app-shopping-list-add-item>
+</ion-content>

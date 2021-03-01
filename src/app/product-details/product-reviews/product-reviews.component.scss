@@ -1,0 +1,75 @@
+.reviews-wrapp {
+    padding: 20px 20px;
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            list-style: none;
+            display: flex;
+            border-bottom: 1px solid rgba(114, 124, 142, 0.1);
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            .user-imgg {
+                width: 60px;
+                height: 60px;
+                position: relative;
+                span {
+                    width: 60px;
+                    height: 60px;
+                    display: inline-block;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 60px;
+                    background: #B7E6E6 0% 0% no-repeat padding-box;
+                    box-shadow: 0px 6px 12px #B7E6E665;
+                    color: #85CBCB;
+                    font-family: 'Futura LT';
+                    font-size: 22px;
+                    font-weight: bold;
+                }
+            }
+            .user-ratin-info {
+                width: calc(100% - 60px);
+                margin-left: 15px;
+                .review-time {
+                    display: flex;
+                    position: relative;
+                    justify-content: space-between;
+                    padding-bottom: 10px;
+                    align-items: center;
+                    span.rating {
+                        display: flex;
+                    }
+                    span.rating img {
+                        max-width: 70px;
+                        width: 16px;
+                        margin-right: 2px;
+                    }
+                    span.time {
+                        color: #515C6F;
+                        font-size: 11px;
+                        font-family: 'Futura LT';
+                        text-align: right;
+                        width: 100%;
+                    }
+                }
+                h3 {
+                    margin: 0;
+                    color: #231F20;
+                    font-size: 15px;
+                    font-family: 'Futura Md BT';
+                }                
+                p {
+                    font-size: 14px;
+                    color: #515C6F;
+                    margin: 0;
+                    padding: 8px 0 0;
+                    font-family: 'Futura Md BT';
+                }
+            }
+        }
+        li:last-child{
+            margin-bottom: 0;
+        }
+    }
+}

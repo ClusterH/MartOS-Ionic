@@ -1,0 +1,96 @@
+<ion-content scrollY="false" overflow-scroll="false" no-bounce>
+  <div class="map-header" [ngClass]="drawerOpened?'fade':'fade-in'">
+    <span class="search">
+      <ion-searchbar class="custom-sreach" placeholder="Search" [(ngModel)]="searchtext"
+        (search)="searchByKeyword($event)"></ion-searchbar>
+    </span>
+    <span class="cart">
+      <img src="../../../../../assets/images/cart.svg" alt="">
+      <span class="total-prod">1</span>
+    </span>
+  </div>
+  <app-sidebar *ngIf="isSidebarEnabled"></app-sidebar>
+
+  <app-mapView [storeItems]="stores" (markerClicked)="markerClicked($event)">
+    <div class="top-section-tabs">
+      <ion-fab horizontal="start" vertical="top" slot="fixed" edge>
+        <ion-fab-button size="small" color="light">
+          <span class="material-icons">
+            more_horiz
+          </span>
+        </ion-fab-button>
+        <ion-fab-list>
+          <ion-fab-button color="light">
+            <img src="../../assets/images/compass.svg" alt="" (click)="hideNaivgation()">
+          </ion-fab-button>
+          <ion-fab-button color="light">
+            <span class="go-btn">GO</span>
+          </ion-fab-button>
+          <ion-fab-button color="light">
+            <span class="material-icons" (click)="openList()">
+              receipt_long
+            </span>
+          </ion-fab-button>
+        </ion-fab-list>
+      </ion-fab>
+      <div class="stop-btn" (click)="stopdirections()" *ngIf="mapsService.activeDirection">
+        <span class="material-icons">
+          stop
+        </span>
+      </div>
+    </div>
+
+  </app-mapView>
+
+  <!-- <div class="map-icons-go">
+    <span class="list-icon" (click)="openList()">
+      <span class="material-icons">
+        receipt_long
+      </span>
+    </span>
+    <span class="go-btn">GO</span>
+    <span class="compass" (click)="hideNaivgation()">
+      <img src="../../assets/images/compass.svg" alt="">
+    </span>
+  </div> -->
+
+  <app-drawer (openStateChanged)="openedDrawer($event)" [scrollPosition]="scrollPosition" #drawer>
+    <div class="container-data" [ngClass]="drawerOpened?'':'disable-croll'" (scroll)="updateScrollPosition($event)">
+      <div class="all-stores-head">
+        <h2> {{sliderTitle}} <span class="search-text">{{queryText}}</span></h2>
+      </div>
+      <div class="map-botto-slider">
+        <ion-slides [options]="{spaceBetween: 0,centeredSlides:false, slidesPerView: 3.5}">
+          <ion-slide *ngFor="let store of stores; let i=index" scrollbar="true">
+            <div class="botm-slides" (click)="toShop(store.storeId)" [routerLink]="'/shop/'+store.storeId">
+              <div class="botm-slides-shadow" [ngClass]="selectedItem.storeId === store.storeId?'active':''"></div>
+              <div class="store-img">
+                <img [src]="store.image" alt="">
+              </div>
+              <h3>
+                <span>{{store.storeName}}</span>
+              </h3>
+            </div>
+          </ion-slide>
+        </ion-slides>
+      </div>
+
+      <div class="Items" *ngIf="selectedItem">
+        <div class="all-store-prod">
+          <h2> All <span class="search-text">{{queryText}}</span>
+            <ng-container *ngIf="selectedItem.storeId">
+              From
+              <span class="selected-store-text">{{selectedItem.storeName}}</span>
+            </ng-container>
+
+          </h2>
+        </div>
+        <div class="map-item-card">
+          <app-item-card [disableClick]="true" *ngFor="let store of selectedItem.onlineProduct; let i=index"
+            [item]="store" (selectedItemRequest)="openDialogue($event)"></app-item-card>
+        </div>
+      </div>
+    </div>
+
+  </app-drawer>
+</ion-content>

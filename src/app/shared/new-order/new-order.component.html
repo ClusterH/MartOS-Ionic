@@ -1,0 +1,5 @@
+<div class="new-order-notification" *ngIf="newOrder" >
+  <!-- <span class="cross-order-tick" (click)="newOrder = false;"> <img src="../../../assets/images/cross-order.svg" alt=""> </span> -->
+  <p>Your order is on the way, check it now.</p>
+  <span class="go-to-order" [routerLink]="'/follow-order/1'"> <img src="../../../assets/images/back-arrow.svg" alt=""> </span>
+</div>

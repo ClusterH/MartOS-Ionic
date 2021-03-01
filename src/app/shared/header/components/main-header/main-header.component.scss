@@ -1,0 +1,44 @@
+.header {
+    padding: 40px 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    background: #f7f8fa;
+    .flex-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .toggle {
+            position: relative;
+        }
+        .logo {
+            display: flex;
+            text-align: center;
+            font-family: 'Futura LT';
+            color: #0D0C45;
+            font-size: 23px;
+            align-items: center;
+            justify-content: center;
+            padding: 0px 0 0 0;
+            img{
+                max-width: 20px;
+                padding-right: 5px;
+            }
+            p {
+                margin: 0;
+                span {
+                    font-weight: 900;
+                }
+            }
+        }
+        .padd-left
+        {
+            padding-left: 15px;
+        }
+    }
+}
+.empty-margin
+{
+    height: 90px;
+    display: inline-block;
+}

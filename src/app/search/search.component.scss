@@ -1,0 +1,417 @@
+.map-header {
+    position: fixed;
+    width: 100%;
+    z-index: 99999999;
+    padding: 10px 22px;
+    display: flex;
+    align-items: center;
+    padding-left: 6px;
+
+    span.toggle {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 0px 10px #0D172433;
+        border-radius: 45px;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    span.search {
+        position: relative;
+        flex: 1;
+
+        input {
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 0px 10px #CFD1D380;
+            border-radius: 50px;
+            border: 0;
+            height: 45px;
+            padding-left: 30px;
+            font-size: 13px;
+            font-family: 'Futura LT';
+            outline: 0;
+            width: 100%;
+        }
+
+        span.search-icon {
+            position: absolute;
+            left: 10px;
+            top: 14px;
+
+            img {
+                max-width: 13px;
+            }
+        }
+    }
+
+    span.cart {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 0px 10px #0D172433;
+        border-radius: 45px;
+        width: 45px;
+        height: 45px;
+
+        span {
+            position: absolute;
+            bottom: 9px;
+            left: 5px;
+            background: #695EFC;
+            border-radius: 50px;
+            padding: 0px 7px;
+            color: #fff;
+            font-size: 8px;
+            font-weight: bold;
+            font-family: "Open Sans", sans-serif;
+        }
+    }
+}
+
+.hometabs {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 10px;
+    z-index: 99;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    outline: 0;
+
+    span {
+        margin: 0 23px;
+        display: block;
+        text-align: center;
+        padding: 10px 0 0 0;
+        outline: 0;
+
+        span.tab-text {
+            font-family: 'Futura Md BT';
+            font-size: 12px;
+            color: #191919;
+            outline: 0;
+        }
+
+        img {
+            max-width: 20px;
+            max-height: 17px;
+        }
+    }
+
+    span.active {
+        color: #695EFC;
+
+        span.tab-text {
+            color: #695EFC;
+        }
+    }
+}
+
+.all-stores-head {
+    padding: 0 0 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+
+    h2 {
+        font-size: 16px;
+        color: #000000;
+        font-family: 'Avenir Next';
+        margin: 0;
+        display: flex;
+        align-items: center;
+
+        img {
+            position: relative;
+            top: 3px;
+        }
+    }
+
+    span {
+        font-size: 14px;
+    }
+}
+
+.botm-slides {
+    // margin: 30px 0px 0 0px;
+    position: relative;
+
+    .botm-slides-shadow {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(253, 105, 105, 0.37);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        border-radius: 10px;
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+
+    h3 {
+        display: flex;
+        margin: 0;
+        font-family: 'Avenir Next';
+        font-size: 20px;
+        position: absolute;
+        z-index: 9;
+        color: #fff;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        img {
+            max-width: 40px;
+            position: relative;
+            top: 0;
+            height: 30px;
+        }
+
+        span {
+            font-size: 13px;
+        }
+    }
+}
+
+.all-store-prod {
+    padding: 0 0 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+    margin-top: 5px;
+
+    h2 {
+        font-size: 16px;
+        color: #000000;
+        font-family: 'Avenir Next';
+        margin: 0;
+        display: flex;
+        align-items: center;
+
+        img {
+            position: relative;
+            top: 3px;
+        }
+
+    }
+
+    span {
+        font-size: 14px;
+    }
+}
+
+.store-img {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.store-img:before {
+    position: absolute;
+    content: "";
+    background: rgb(0 0 0 / 0.42);
+    width: 100%;
+    height: 100%;
+}
+
+.map-icons-go {
+    position: absolute;
+    left: 20px;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .list-icon {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 0px 10px #0D172433;
+        border-radius: 45px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+}
+
+span.go-btn {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #0D172433;
+    border-radius: 45px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    font-family: 'Avenir Next';
+    line-height: 40px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+span.compass {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #0D172433;
+    border-radius: 45px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-family: 'Avenir Next';
+    line-height: 40px;
+    font-size: 13px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 0 0;
+}
+
+.container-data {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.Items {
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    table-layout: fixed;
+    flex: 1;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.map-item-card {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    padding: 0 10px;
+    max-height: calc(100vh - 300px);
+
+    app-item-card {
+        width: 50%;
+    }
+}
+
+app-mapView {
+    height: 100%;
+}
+
+.map-botto-slider {
+    padding-left: 20px;
+
+    ion-slide {
+        margin-right: 10px;
+    }
+}
+
+.backdrop {
+    width: 100%;
+    height: 100%;
+    background: #00000094;
+    z-index: 10;
+    position: absolute;
+}
+
+.fade {
+    transition: 0.5s linear all;
+    background-color: white;
+    box-shadow: 0px 9px 20px #00000029;
+}
+
+.fade-in {
+    transition: 0.5s linear all;
+}
+
+span.search-text {
+    color: #695EFC;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+span.search-inner {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+
+    input {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 0px 10px #CFD1D380;
+        border-radius: 50px;
+        border: 0;
+        height: 45px;
+        padding-left: 30px;
+        font-size: 13px;
+        font-family: 'Futura LT';
+        outline: 0;
+        width: 100%;
+    }
+
+    span.search-icon {
+        position: absolute;
+        left: 10px;
+        top: 14px;
+
+        img {
+            max-width: 13px;
+        }
+    }
+}
+
+.disable-croll {
+    overflow: hidden !important;
+}
+
+.selected-store-text {
+    color: #FD6969;
+    font-family: 'Avenir Next';
+    font-size: 14px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.searchbar-input-container {
+    height: 45px;
+}
+.top-section-tabs{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:100px;
+    padding-right: 25px;;
+
+ion-fab{
+    position: relative;
+    top: 0;
+    margin:0px;
+    }
+    
+.stop-btn{
+    width:25px;
+    height:25px;
+    display:block;
+    background-color: white;
+    border-radius: 50%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+}

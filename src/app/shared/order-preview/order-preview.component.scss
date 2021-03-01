@@ -1,0 +1,88 @@
+.order-preview {
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            list-style: none;
+            padding: 0 22px 17px;
+            border-bottom: 5px solid #fff;
+            margin-bottom: 17px;
+            .listing-wrap{
+                background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+                box-shadow: 0px 3px 8px #70707050;
+                border-radius: 6px;
+                opacity: 1;
+                .order-list-flex {
+                    display: flex;
+                    padding: 11px 17px 20px;
+                    .order-list-left {
+                        width: 60px;
+                        height: 60px;
+                        position: relative;
+                        overflow: hidden;
+                        border-radius: 50%;
+                        img {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                            max-width: 60px;
+                        }
+                    }
+                    .order-list-right {
+                        width: calc(100% - 70px);
+                        padding-left: 10px;
+                        h3 {
+                            margin: 0;
+                            color: #231F20;
+                            font-size: 15px;
+                            font-family: 'Futura LT';
+                            font-weight: bold;
+                        }
+                        p {
+                            margin: 0;
+                            color: #A8ADB7;
+                            font-size: 14px;
+                            font-family: 'Futura LT';
+                            padding: 5px 0 0 0;
+                        }
+                    }
+                }
+                .lblOrder{
+                    height: 12px;
+                    margin: 0;
+                    padding: 0;
+                    font-size: 11px;
+                    text-align: right;
+                    padding-top: 5px !important;
+                    padding-right: 11px;
+                    color:#515C6F;
+                    opacity: 0.5;
+                }
+                .buttons-order button {
+                    display: block;
+                    border-top: 1px solid #C9D0DE;
+                    border-radius: 0px 0px 3px 4px;
+                    background: #ffff;
+                    padding: 14px 20px;
+                    color: #695EFC;
+                    width: 100%;
+                    font-size: 15px;
+                    font-family: 'Avenir Next Medium';
+                    text-align: left;
+                    cursor: pointer;
+                    position: relative;
+                    outline: 0;
+                    img {
+                        position: absolute;
+                        right: 10px;
+                        max-width: 12px;
+                        top: 50%;
+                        transform: translate(-50%,-50%) rotate(180deg);
+                    }
+                }
+            }
+        } 
+    }
+}

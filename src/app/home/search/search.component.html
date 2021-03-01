@@ -1,0 +1,28 @@
+<div class="search-comp-page">
+  <app-header type="BASE"></app-header>
+  <app-sidebar *ngIf="isSidebarEnabled"></app-sidebar>
+  <div class="searxh-comp">
+    <!-- <div class="search-head">
+      <img src="../../../assets/images/funnel.svg" alt="">
+    </div> -->
+    <div class="input-type">    
+      <ion-searchbar [(ng-model)]="queryText" placeholder="Search Something" (search)="searchByKeyword($event)"></ion-searchbar>
+       <!-- <input type="search" placeholder="Search Something"  (keyup.enter)="search()"/> -->
+
+    </div>
+</div>
+  <div class="tags">
+    <app-overflowable [options]="{spaceBetween: 10, slidesPerView: 3.5}" hasChips="true" [children]="categoriesList">
+    </app-overflowable>
+  </div>
+  <div class="latest-arrivals">
+    <h2>Recommended </h2>
+    <ul>
+      <ng-container *ngFor="let item of items;let i=index">
+        <li *ngIf="i < itemDisplayCount">
+          <app-item-card [item]="item"></app-item-card>
+        </li>
+      </ng-container>
+    </ul>
+  </div>
+</div>

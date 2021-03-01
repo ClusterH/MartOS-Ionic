@@ -1,0 +1,65 @@
+.welcome-wrap {
+    padding: 40px 22px 0;
+    background-color: #F7F8FA;
+    text-align: center;
+    height:100vh;
+    h1 {
+        margin: 0;
+        color: #191919;
+        font-family: 'Futura Md BT';
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+    p {
+        margin: 0;
+        color: #191919;
+        font-size: 17px;
+        font-family: 'Futura Md BT';
+        padding: 0 18px 10px;
+        line-height: 1.5;
+    }
+    button {
+        background: #695EFC;
+        appearance: none;
+        width: 100%;
+        max-width: 200px;
+        margin: 30px auto 0;
+        text-transform: uppercase;
+        height: 40px;
+        color: #fff;
+        font-family: 'Futura Md BT';
+        border-radius: 50px;
+        font-size: 14px;
+    }
+    .cart-only {
+        position: relative;
+        margin-left: auto;
+        padding: 20px 0 0 0;
+        display: table;
+        span {
+            position: absolute;
+            bottom: -3px;
+            left: -7px;
+            background: #695EFC;
+            border-radius: 50px;
+            padding: 0px 7px;
+            color: #fff;
+            font-size: 8px;
+            font-weight: bold;
+            font-family: "Open Sans", sans-serif;
+        }
+    }
+    .skipthis
+    {
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        padding-top: 20px;
+        color: #000;
+        cursor: pointer;
+    }
+    .hey-there{
+        padding-top: 40px;
+    }
+}

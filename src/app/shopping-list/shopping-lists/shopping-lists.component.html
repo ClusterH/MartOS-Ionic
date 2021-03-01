@@ -1,0 +1,6 @@
+<ion-button expand="block" color="tertiary" (click)="createList()">
+  <span>Create a new Shopping List</span>
+</ion-button>
+<ng-container *ngFor="let list of lists">
+  <app-shopping-list-item [item]="list"></app-shopping-list-item>
+</ng-container>

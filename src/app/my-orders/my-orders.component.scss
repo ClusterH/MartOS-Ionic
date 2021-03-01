@@ -1,0 +1,16 @@
+.my-orders {
+    background: #f5f8fa;
+    overflow-y: auto;
+    .last-months {
+        background:transprent;
+        margin: 50px 0 20px;
+        padding: 10px 22px;
+        font-weight: bold;
+        p {
+            margin: 0;
+            color: #231F20;
+            font-size: 18px;
+            font-family: 'Futura Md BT';
+        }
+    }
+}

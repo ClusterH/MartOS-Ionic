@@ -1,0 +1,86 @@
+
+p{
+    margin: 0;
+}
+.add-shipping-wrap {
+    min-height: 100vh;
+    background: #f5f8fa;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.address-container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    // max-width: 450px;
+    // margin: 0 auto;
+
+
+    .address {
+        height: 90px;
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 6px;
+        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Futura LT';
+            font-size: 14px;
+            color: #000000;
+            .add-username{
+                font-size: 14px;
+                font-weight: 500;
+            }
+            .add-address, .add-city, .add-country{
+                font-size: 14px;
+                color: #B0B0B0;
+            }
+        }
+
+        .actions {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+        }
+    }
+}
+
+.selected {
+    font-family: 'Futura LT';
+    font-size: 15px;
+    color: #695EFC;
+}
+
+.add-adddrss-btn {
+    margin: 0 30px 30px;
+    margin-top: auto;
+}
+
+.add-adddrss-btn button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #695EFC;
+    width: 100%;
+    color: #fff;
+    height: 55px;
+    border-radius: 45px;
+    font-family: "Futura", sans-serif;
+    font-weight: bold;
+    outline: 0;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.add-selected{
+    border: 2px solid rgb(105, 94, 252);
+    box-shadow: 0 0 15px rgba(105, 94, 252, 0.4);
+}

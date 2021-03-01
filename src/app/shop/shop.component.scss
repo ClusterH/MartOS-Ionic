@@ -1,0 +1,136 @@
+.shop-profile-wrppp {
+  overflow-y: auto;
+  background: #f7f8fa;
+}
+
+img.toggle-down-up {
+  max-width: 8px !important;
+  transform: rotate(270deg);
+  position: relative;
+  top: 0px;
+  left: 6px;
+}
+.showtimings {
+  padding-left: 25px;
+}
+.showtimings p {
+  padding: 10px 0 0 !important;
+}
+.map-store-view {
+  min-height: 140px;
+  app-mapview {
+    width: 100%;
+    display: inline-block;
+    height: 200px;
+  }
+}
+.store-view-wrap {
+  background: #F7F8FA;
+  padding: 10px 0px;
+  .store-view {
+    padding: 20px 20px;
+    h2 {
+      margin: 0;
+      color: #000000;
+      font-size: 19px;
+      font-family: 'Futura Md BT';
+    }
+    p {
+      margin: 0;
+      padding: 15px 0 0;
+      color: #191919;
+      font-family: 'Futura LT';
+      font-size: 12px;
+    }
+    ul {
+      margin: 0;
+      padding: 20px 0 0 0 !important;
+      li {
+        list-style: none;
+        color: #191919;
+        font-size: 12px;
+        font-family: 'Futura LT';
+        padding-bottom: 8px;
+        img{
+          max-width: 10px;
+          margin-right: 10px;
+        }
+      }
+    }
+    .services{
+      padding: 20px 0;
+      h3 {
+          color: #191919;
+          font-size: 15px;
+          font-family: 'Futura Md BT';
+          margin: 0;
+      }
+      ul {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-wrap: wrap;
+          li {
+            padding: 0 20px;
+            span {
+              width: 70px;
+              height: 70px;
+              background: #fff;
+              border-radius: 50px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              img {
+                max-width: 30px;
+                margin: 0;
+            }
+          }
+          h3 {
+              font-size: 14px;
+              color: #191919;
+              font-family: 'Futura LT';
+              text-align: center;
+              padding: 10px 0 0 0;
+          }
+        }
+      }
+      a {
+          color: #191919;
+          font-size: 15px;
+          margin: 40px 0 0;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          img {
+          padding: 4px 10px;
+        }
+      }
+    }
+  } 
+
+  .shop-catego {
+    border-top: 5px solid #fff;
+    padding: 20px 20px;
+    h3 {
+      font-size: 19px;
+      color: #000000;
+      margin: 0;
+      font-family: 'Futura Md BT';
+    }
+  }
+
+  .shop-products {
+    padding: 20px 10px;
+    border-top: 5px solid #fff;
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        list-style: none;
+        width: 50%;
+      }
+    }
+  }
+}

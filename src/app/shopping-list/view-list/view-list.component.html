@@ -1,0 +1,34 @@
+<ion-content *ngIf="currentItem">
+  <div class="back-operation" (click)="backClicked()">
+    <span class="material-icons">
+      keyboard_arrow_left
+    </span>
+  </div>
+  <div class="sub-title">
+    <span class="name">{{currentItem.name}}</span>
+    <span class="sub-info" *ngIf="currentItem.type === shoppingListType.Permanent">Permanent</span>
+    <div class="edit-icon">
+      <span class="material-icons"  (click)="editList()">
+        create
+      </span>
+    </div>
+  </div>
+
+  <div class="location-info-container">
+    <div class="location-inner">
+      <div class="location-icon">
+        <span class="material-icons">
+          location_on
+          </span>
+      </div>
+      <span class="location-info" (click)="goToLocation()">
+        Display the itinerary on the map
+      </span>
+    </div>
+  </div>
+
+
+  <ng-container *ngFor="let article of currentItem.onlineArticles">
+    <app-list-article [article]="article" (addTolist)="addToList($event)" (delete)="deleteArticle($event)"></app-list-article>
+  </ng-container>
+</ion-content>

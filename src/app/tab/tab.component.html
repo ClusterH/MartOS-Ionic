@@ -1,0 +1,30 @@
+<div class="hometabs">
+  <ion-tabs #tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home" (click)="openTab('home', $event)">
+        <div class="hometabs-wrapper">
+          <span class="material-icons">
+            store
+          </span>
+          <ion-label>Catalog</ion-label>
+        </div>
+      </ion-tab-button>
+      <ion-tab-button tab="shopnearby" (click)="openTab('shopnearby', $event)">
+        <div class="hometabs-wrapper">
+          <span class="material-icons">
+            location_on
+          </span>
+          <ion-label>Map View</ion-label>
+        </div>
+      </ion-tab-button>
+      <ion-tab-button tab="shoppinglist" (click)="openTab('shoppinglist', $event)">
+        <div class="hometabs-wrapper">
+          <span class="material-icons">
+            playlist_add
+          </span>
+          <ion-label>Shopping List</ion-label>
+        </div>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</div>

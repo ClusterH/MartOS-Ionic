@@ -1,0 +1,594 @@
+.order-detail {
+  h3 {
+    color: #ff6969;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Futura';
+    padding-left: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .delivery-mode {
+    margin: 15px 22px;
+    padding: 10px 23px;
+    background: #fff;
+    box-shadow: 0 0 15px #cccccc6e;
+    .delivery-mode-title {
+      color: #0d1724;
+      font-size: 15px;
+      font-family: 'Futura LT';
+      margin-bottom: 20px;
+      display: block;
+    }
+    .delivery-choice {
+      display: flex;
+      margin-top: 15px;
+      font-family: 'Futura LT';
+      .delivery-image {
+        img {
+          width: 36px;
+          height: 36px;
+        }
+      }
+      .delivery-info {
+        margin-left: 15px;
+        span.delivery-type {
+          color: #0d1724;
+          font-size: 15px;
+        }
+        .addmpa {
+          display: flex;
+          img {
+            position: relative;
+            top: -2px;
+            left: -9px;
+          }
+          span {
+            position: relative;
+            left: -11px;
+            color: #b0b0b0;
+          }
+        }
+      }
+      .delivery-status {
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        span {
+          display: block;
+          margin-top: 10px;
+          color: #b0b0b0;
+        }
+        label {
+          padding-left: 15px;
+        }
+      }
+    }
+    ul {
+      margin: 0;
+      padding: 20px 0 0 0;
+      display: flex;
+      justify-content: center;
+      li {
+        width: 50%;
+        list-style: none;
+        text-align: center;
+        font-family: 'Futura LT';
+        span.deliv-img {
+          border: 0.699999988079071px solid #141414;
+          border-radius: 50%;
+          width: 90px;
+          height: 90px;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          img {
+            max-width: 50px;
+          }
+        }
+
+        p {
+          margin: 0;
+          color: #0d1724;
+          font-size: 15px;
+          padding: 10px 0 0;
+        }
+      }
+    }
+  }
+
+  .divider {
+    height: 5px;
+    background: #fff;
+    width: 100%;
+    margin: 30px 0;
+  }
+  .shipping-address {
+    background: #fff;
+    margin: 15px 22px;
+    padding: 10px 23px;
+    box-shadow: 0 0 15px #cccccc6e;
+    .title {
+      display: flex;
+      justify-content: space-between;
+      h3 {
+        color: #ff6969;
+        font-size: 18px;
+        font-family: 'Futura';
+        padding-bottom: 10px;
+        padding-left: 0;
+        margin: 0;
+      }
+      .btn-change {
+        color: #ff6969;
+        font-size: 10px;
+        text-decoration: underline;
+        padding-top: 5px;
+      }
+    }
+    .shipping-container {
+      display: flex;
+      margin-top: 10px;
+      .user-image {
+        img {
+          width: 79px;
+        }
+      }
+      .shipping-info {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Futura';
+        h4 {
+          font-size: 15px;
+          color: #0d1724;
+          margin-top: 0;
+          margin-bottom: 3px;
+        }
+        .shipping-info-address {
+          font-size: 13px;
+          color: #b0b0b0;
+        }
+        .shipping-info-tel {
+          font-size: 12px;
+          margin-top: 4px;
+          color: #0d1724;
+        }
+      }
+    }
+    .shipping-form {
+      .form-group {
+        display: flex;
+        font-size: 15px;
+        font-family: 'Futura LT';
+        color: #b0b0b0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        input {
+          border-radius: 6px;
+          height: 36px;
+          border: 1px solid #b0b0b0;
+          padding-left: 7px;
+          width: 100%;
+          &.w50 {
+            width: 50%;
+            &:first-child {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+    .save-shipping {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #0d1724;
+      font-size: 15px;
+      font-family: 'Futura LT';
+      margin: 15px 0;
+      ion-toggle {
+        --background: #fd6969;
+        --background-checked: #b0b0b0;
+        --handle-border-radius: 14px 14px 14px 14px;
+        --handle-width: 20px;
+        height: 24px;
+        width: 46px;
+      }
+    }
+    .shipping-action {
+      padding: 0 35px 5px;
+      button {
+        background: #695efc;
+        width: 100%;
+        color: #fff;
+        height: 40px;
+        border-radius: 50px;
+        font-size: 12px;
+        font-family: 'Futura';
+        font-weight: bold;
+        outline: 0;
+      }
+    }
+  }
+
+  .payment {
+    background: #fff;
+    margin: 15px 22px;
+    padding: 10px 23px;
+    box-shadow: 0 0 15px #cccccc6e;
+    .title {
+      display: flex;
+      justify-content: space-between;
+      h3 {
+        color: #ff6969;
+        font-size: 18px;
+        font-family: 'Futura';
+        padding-bottom: 10px;
+        padding-left: 0;
+        margin: 0;
+      }
+    }
+  }
+}
+.shipping-page {
+  background: #f5f8fa;
+  overflow-y: auto;
+}
+
+.delivery-mode ul li.active span.deliv-img {
+  background: #ff6869;
+  border: 1px solid transparent;
+}
+
+.delivery-mode ul li span.deliv-img img.white {
+  display: none;
+}
+
+.delivery-mode ul li.active span.deliv-img img {
+  display: none;
+}
+
+.delivery-mode ul li.active span.deliv-img img.white {
+  display: block;
+}
+
+.address-data-flex {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 20px;
+
+  .main-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #0d1724;
+    font-size: 15px;
+    font-family: 'Futura LT';
+    margin-bottom: 10px;
+  }
+
+  .sub-info {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Futura LT';
+    font-size: 13px;
+    color: #b0b0b0;
+  }
+}
+
+.add-data-first-left {
+  display: flex;
+  align-items: center;
+}
+
+.add-data-first-left .add-text h4 {
+  color: #0d1724;
+  font-size: 15px;
+  font-family: 'Futura LT';
+  margin: 0;
+}
+
+.add-data-first-left .add-text {
+  padding-left: 13px;
+  padding-right: 20px;
+}
+
+.add-data-first-left .add-text p {
+  color: #b0b0b0;
+  margin: 0;
+  font-size: 13px;
+  padding: 5px 0;
+}
+
+.add-data-first-left .add-user-img img {
+  max-width: 80px;
+}
+
+.payment-btn {
+  margin: 0 30px 30px;
+}
+
+.payment-btn button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #695efc;
+  width: 100%;
+  color: #fff;
+  height: 55px;
+  border-radius: 45px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  outline: 0;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.payment-btn button img {
+  margin-right: 10px;
+  position: relative;
+  top: 2px;
+}
+
+.billing-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  h3 {
+    margin: 0px;
+  }
+
+  button {
+    margin: 0px;
+    padding-left: 7px;
+    padding-right: 7px;
+
+    &.active-btn {
+      background-color: #695efc;
+      color: white;
+    }
+  }
+}
+
+.payment {
+  margin: 30px 22px 30px;
+
+  h3 {
+    color: #ff6969;
+    font-size: 18px;
+    font-family: 'Futura';
+  }
+
+  button {
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid #695efc;
+    color: #695efc;
+    border-radius: 50px;
+    margin: 0 auto;
+    display: table;
+    height: 40px;
+    font-size: 14px;
+    font-family: 'Futura Md BT';
+    margin: 25px auto 30px;
+    padding: 0 20px;
+  }
+
+  .payment-container {
+    display: flex;
+    flex-direction: column;
+
+    .payment-item {
+      display: flex;
+      height: 35px;
+      background-color: white;
+      align-items: center;
+      justify-content: space-between;
+
+      .payment-item-image {
+        width: 35px;
+      }
+
+      .payment-item-status {
+        height: 20px;
+        display: flex;
+        align-items: center;
+        width: 50px;
+        justify-content: flex-end;
+
+        .active-text {
+          color: #00e134;
+          font-size: 15px;
+          margin-right: 10px;
+        }
+      }
+
+      .payment-item-number {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        flex: 1;
+
+        span {
+          display: block;
+
+          &.hidden-nmbr {
+            font-size: 13px;
+            font-weight: bold;
+            color: #0d1724;
+          }
+
+          &.view-nmbr {
+            margin-left: 5px;
+            color: #ff6969;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+    .save-payment {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #0d1724;
+      font-size: 15px;
+      font-family: 'Futura LT';
+      margin: 10px 0;
+      ion-toggle {
+        --background: #fd6969;
+        --background-checked: #b0b0b0;
+        --handle-border-radius: 14px 14px 14px 14px;
+        --handle-width: 20px;
+        height: 24px;
+        width: 46px;
+      }
+    }
+    .form-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      .payment-mode {
+        position: relative;
+        img {
+          width: 40px;
+        }
+        ion-icon {
+          left: 40px;
+          position: absolute;
+          top: 5px;
+          color: #0d1724;
+        }
+      }
+      ion-icon {
+        color: #0d1724;
+      }
+    }
+    .form-group {
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      label {
+        color: #ff6969;
+        font-size: 14px;
+        font-family: 'Futura LT';
+      }
+      input {
+        border: none;
+        border-bottom: 1px solid #D5D6D5;
+        color: #D5D6D5;
+        margin-top: 5px;
+      }
+    }
+    .form-group-split {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      label {
+        color: #ff6969;
+        font-size: 14px;
+        font-family: 'Futura LT';
+      }
+      input {
+        border: none;
+        border-bottom: 1px solid #D5D6D5;
+        color: #D5D6D5;
+        margin-top: 5px;
+      }
+      .form-expiry {
+        display: flex;
+        flex-direction: column;
+        width: 58%;
+      }
+      .form-cvv {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+      }
+    }
+    .btn-change {
+      color: #ff6969;
+      font-size: 10px;
+      text-decoration: underline;
+    }
+    .radio-checked {
+      background: #695efc;
+    }
+  }
+}
+
+.btn-radio {
+  width: 15px;
+  height: 15px;
+  border-color: #695efc;
+  border-radius: 20px;
+  border-width: 1px;
+  border-style: solid;
+  --color: transparent;
+  --color-checked: transparent;
+}
+
+[type='radio']:checked,
+[type='radio']:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+[type='radio']:checked + label,
+[type='radio']:not(:checked) + label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #666;
+  top: -7px;
+}
+[type='radio']:checked + label:before,
+[type='radio']:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+}
+[type='radio']:not(:checked) + label:before {
+  background: #ffd6d6;
+}
+[type='radio']:checked + label:before {
+  background: #f8afaf;
+}
+[type='radio']:checked + label:after,
+[type='radio']:not(:checked) + label:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: #fd6969;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+[type='radio']:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+[type='radio']:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}

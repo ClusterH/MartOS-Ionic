@@ -1,0 +1,60 @@
+<div class="image-prod-slider" [ngClass]="InnerContent?'no-margin':''">
+  <app-image-slider></app-image-slider>
+  <div class="article-btns">
+    <div class="single-btn favorites">
+      <div class="inner-icon">
+        <span class="material-icons" (click)="addToFavorites()">
+          favorite_border
+        </span>
+      </div>
+
+      <span class="text">
+        Add To favorites
+      </span>
+    </div>
+    <div class="single-btn">
+      <div class="inner-icon">
+        <span class="material-icons" (click)="addToList()">
+          playlist_add
+        </span>
+      </div>
+
+      <span class="text">
+        Add To <br>
+        Shopping List
+      </span>
+    </div>
+    <div class="single-btn">
+      <div class="inner-icon">
+        <span class="go-icon" (click)="goToProduct()">GO</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="prices-wrap">
+  <h2>{{productPrize}}</h2>
+  <p>Only {{leftArticle}} left</p>
+  <li *ngFor="let filter of filters">{{filter.name}}: {{filter.value}}</li>
+</div>
+<div class="prod-wrpp-color">
+  <div class="prod-rev-detail">
+    <div class="prod-tabs">
+      <ul value="product" class="prod-segment">
+        <li (click)="selectTab('OPTIONS')" class="prod-inner-seg" [ngClass]="{'active':activeTab === 'OPTIONS' }"
+          value="product">Product</li>
+        <li (click)="selectTab('DESCRIPTION')" class="prod-inner-seg"
+          [ngClass]="{'active':activeTab === 'DESCRIPTION' }" value="description">Description</li>
+        <li (click)="selectTab('REVIEWS')" class="prod-inner-seg" [ngClass]="{'active':activeTab === 'REVIEWS' }"
+          value="reviews">Reviews</li>
+      </ul>
+    </div>
+  </div>
+  <div class="type-wrap">
+    <app-product-description *ngIf="activeTab === 'DESCRIPTION'"></app-product-description>
+    <app-product-reviews *ngIf="activeTab === 'REVIEWS'"></app-product-reviews>
+    <app-product-options *ngIf="activeTab === 'OPTIONS'" (appliedFilters)="changeFilters($event)"></app-product-options>
+  </div>
+  <div class="add-to-cart">
+    <button (click)="addToCard()">Add to Cart <img src="../../assets/images/addtocart.png" alt=""> </button>
+  </div>
+</div>

@@ -1,0 +1,192 @@
+:host {
+    height: 100%;
+}
+.order-detail {
+    min-height: 100vh;
+    background: #f5f8fa;
+    overflow-y: auto;
+    h3 {
+        color: #FF6969;
+        font-size: 18px;
+        font-family: 'Futura';
+        padding-left: 22px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .items-wrap {
+        margin: 15px 22px;
+        border-radius: 6px;
+        background: #fff;
+        box-shadow: 0 0 15px #cccccc6e;
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                list-style: none;
+                padding: 20px 32px 0 15px;
+                display: flex;
+                position: relative;
+                width: 100%;
+                .item-img {
+                    width: 48px;
+                    height: 56px;
+                }
+                .close {
+                    position: absolute;
+                    top: 15px;
+                    left: 9px;
+                    width: 12px;
+                    height: 12px;
+                    border: 0.3px solid #707070;
+                    border-radius: 50%;
+                    background: white;
+                  }
+                  .close:hover {
+                    opacity: 1;
+                  }
+                  .close:before, .close:after {
+                    position: absolute;
+                    left: 5px;
+                    top: 1px;
+                    content: " ";
+                    height: 8px;
+                    width: 1px;
+                    background-color: #333;
+                  }
+                  .close:before {
+                    transform: rotate(45deg);
+                  }
+                  .close:after {
+                    transform: rotate(-45deg);
+                  }
+                  
+                .item-price {
+                    color:#030303;
+                    font-weight: bold;
+                    font-family: 'Avenir Next';
+                    font-size: 12px;
+                    line-height: 16px;
+                    margin-left: auto;
+                    display: flex;
+                    align-items: flex-end;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .total-warning {
+                        color: #fd6969;
+                        font-size: 10px;
+                        font-family: 'Futura LT';    
+                        font-weight: normal;
+                    }
+                }
+                .item-text {
+                    padding: 0 8px;
+                    h4 {
+                        margin: 0px;
+                        color: #0D1724;
+                        font-size: 12px;
+                        font-family: "Futura";
+                        font-weight: bold;
+                        line-height: 16px;
+                    }
+                    h5 {
+                        margin: 0px;
+                        color: #0D1724;
+                        font-size: 10px;
+                        font-family: "Futura LT";
+                        line-height: 13px;
+                    }
+                    span {
+                        color: #747576;
+                        margin-top: 6px;
+                        display: block;
+                        font-size: 10px;
+                        font-family: "Futura LT";
+                        line-height: 13px;
+                    }
+                }
+            }
+        }
+        .total {
+            color: #000000;
+            font-size: 14px;
+            font-family: 'Avenir Next';
+            margin-top: 5px;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            .total-price {
+                font-weight: bold;
+            }
+        }
+    }
+    .order-again {
+        padding: 0 22px 30px;
+        button {
+            background: #695EFC;
+            width: 100%;
+            color: #fff;
+            height: 55px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            outline: 0;
+            img{
+                margin-right: 4px;
+                width: 17px;
+            }
+        }
+    }
+    .checkout-total {
+        border-top: 1px solid #ccc;
+        margin: 30px;
+        ul {
+            padding: 20px 0 0 0;
+            max-width: 200px;
+            margin: 0 auto;
+            li {
+                display: flex;
+                padding-bottom: 15px !important;
+                padding-top: 0 !important;
+                p {
+                    margin: 0;
+                    color: #0D1724;
+                    font-size: 15px;
+                    font-family: 'Futura LT';
+                }
+                p:first-child {
+                    width: 100px;
+                }
+            }
+            li.total p {
+                font-family: 'Avenir Next';
+                font-weight: bold;
+            }
+        }
+    }
+    .inc-order {
+        background: #fff;
+        box-shadow: 0px 0px 2px #00000029;
+        border-radius: 50px;
+        margin: 10px 0 0 0;
+        width: 25px;
+    }
+    .plus-minus {
+        text-align: center;
+    }
+    .inc-order p {
+        margin: 0;
+        padding: 3px 0 3px 0;
+        font-family: 'Avenir Next';
+        font-weight: bold;
+    }
+}
+
+span.total-items {
+    text-align: center;
+    background: #f5f8fa;
+    width: 100%;
+    display: block;
+    padding: 3px 0 0px 0px;
+    color: #ff6b6b;
+}

@@ -1,0 +1,114 @@
+.add-shipping-wrap {
+    min-height: 100vh;
+    background: #f5f8fa;
+    overflow-y: auto;
+}
+
+.contact-info-add {
+    background: #fff;
+    margin: 5px 22px 0;
+    border-radius: 19px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.contact-info-add h3 {
+    color: #FD6969;
+    font-size: 20px;
+    font-family: "Futura";
+    margin: 0;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact-info-add p {
+    color: #000000;
+    font-size: 14px;
+    font-family: 'Futura LT';
+    margin: 0;
+    padding: 10px 0 20px 0;
+}
+
+.contact-info-fields input {
+    width: 100%;
+    border: 1px solid #B0B0B0;
+    border-radius: 4px;
+    opacity: 1;
+    appearance: none;
+    height: 39px;
+    padding: 0 10px;
+    font-family: 'Futura LT';
+    font-size: 15px;
+    outline: 0;
+}
+
+.contact-info-fields .login-errmsg {
+    font-size: 11px;
+    color: red;
+    font-family: 'Futura LT';
+}
+
+.contact-info-fields {
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.contact-info-fields-flex {
+    display: flex;
+}
+
+.contact-info-fields-flex .contact-info-fields:first-child {
+    width: 30%;
+    margin-right: 10px;
+}
+.shipping .contact-info-fields-flex .contact-info-fields:first-child {
+    width: 57% !important;
+}
+
+.add-adddrss-btn {
+    margin: 0 30px 30px;
+}
+
+.add-adddrss-btn button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #695EFC;
+    width: 100%;
+    color: #fff;
+    height: 55px;
+    border-radius: 45px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    outline: 0;
+    font-size: 18px;
+}
+
+.save-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 30px;
+    p {
+        color: #0D1724;
+        font-size: 15px;
+        font-family: 'Futura LT';
+        font-weight: normal;
+    }
+}
+
+ion-toggle {
+    width: 60px;
+    height: 30px;
+  --background:#e8e8e9;
+  --background-checked: red;
+
+  --handle-background: #e8e8e9;
+  --handle-background-checked: white;
+}
+
+.add-indicatif{
+    width: 25% !important;
+}
+
+

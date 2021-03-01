@@ -1,0 +1,48 @@
+.prod-desc {
+    padding: 20px 20px 0;
+    h2 {
+        margin: 0;
+        color: #231F20;
+        font-family: 'Futura Md BT';
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+    p {
+        margin: 0;
+        font-size: 14px;
+        font-family: 'Futura Md BT';
+        color: #515C6F;
+        padding: 10px 0 0;
+    }
+    ul {
+        margin: 20px 0 0;
+        padding: 10px 0 10px 0;
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid rgb(114 124 142 / 0.1);
+        border-left: 0;
+        border-right: 0;
+        li {
+            list-style: none;
+            width: 50%;
+            padding: 15px 0px;
+            h4 {
+                color: #231F20;
+                font-size: 12px;
+                font-family: 'Futura Md BT';
+                text-transform: uppercase;
+                margin: 0;
+            }
+            p {
+                margin: 0;
+                padding: 5px 0 0 0;
+                color: #515C6F;
+                font-size: 14px;
+                font-family: 'Futura LT';
+            }
+        }
+        li:nth-child(even) {
+            text-align: right;
+        }    
+    }
+}

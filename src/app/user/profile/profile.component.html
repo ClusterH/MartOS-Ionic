@@ -1,0 +1,81 @@
+<div class="user-profile">
+  <div class="top-cart-header">
+    <div class="back-arrow" (click)="backClicked()">
+      <img src="../../../assets/images/back-arrow.svg" alt="">
+    </div>
+    <div class="cart-only">
+      <img src="../../../../../assets/images/cart.svg" alt="">
+      <span class="total-prod">1</span>
+    </div>
+  </div>
+  <div class="profile-flex">
+    <!-- <div class="user-pro-img"  (click)="getImage()">
+      <img src="../../../assets/images/profile.png" alt="">
+    </div> -->
+    <div class="user-info">
+      <h3>{{userInfo.name}} {{userInfo.lastName}}</h3>
+      <span>
+        <a href="mailto:janedoe@email.com">{{userInfo.email}}</a>
+      </span>
+      <!-- <p>
+        <a routerLink="/user/account">Edit Account</a>
+      </p> -->
+    </div>
+  </div>
+  <div class="user-listing">
+    <ul>
+      <li>
+        <a routerLink="/user/account">
+          <p>
+            <span class="list-icons">
+              <img src="../../../assets/images/account.svg" alt="">
+            </span>
+            <span>
+              <i>Account</i>
+              <img src="../../../assets/images/right-arrow-orng.svg" alt="">
+            </span>
+          </p>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/payments/cards">
+          <p>
+            <span class="list-icons">
+              <img src="../../../assets/images/payment.svg" alt="">
+            </span>
+            <span>
+              <i>Payment</i>
+              <img src="../../../assets/images/right-arrow-orng.svg" alt="">
+            </span>
+          </p>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/my-orders">
+          <p>
+            <span class="list-icons">
+              <img src="../../../assets/images/my-orders.svg" alt="">
+            </span>
+            <span>
+              <i>My orders</i>
+              <img src="../../../assets/images/right-arrow-orng.svg" alt="">
+            </span>
+          </p>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/address">
+          <p>
+            <span class="list-icons">
+              <img src="../../../assets/images/home.svg" alt="">
+            </span>
+            <span>
+              <i>My address</i>
+              <img src="../../../assets/images/right-arrow-orng.svg" alt="">
+            </span>
+          </p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

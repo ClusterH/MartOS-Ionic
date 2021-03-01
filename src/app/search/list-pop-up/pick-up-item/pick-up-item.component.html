@@ -1,0 +1,48 @@
+<div class="container">
+
+  <div class="order-info">
+    <span class="go-direction">
+      Go
+    </span>
+    <span class="order-number">
+      Order #165534569
+    </span>
+  </div>
+
+  <div class="item-info" [ngStyle]="{'opacity':article.totalStock===0?'0.3':''}">
+    <div class="article-image">
+      <img [src]="article.image" />
+    </div>
+    <div class="article-info">
+      <div class="top-section">
+        <div class="name">
+          {{article.name}}
+        </div>
+        <div class="price">
+          {{article.price}}$
+        </div>
+      </div>
+
+      <div class="options">
+        <ng-container *ngFor="let option of article.options">
+          <span>{{option.name}}:{{option.value}}</span>
+        </ng-container>
+      </div>
+
+      <div class="store-info">
+        <div class="location">
+          <span class="material-icons">
+            location_on
+          </span>
+        </div>
+        <div class="store-name">
+          Family business
+        </div>
+        <div class="store-status">
+          Closed
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

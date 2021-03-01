@@ -1,0 +1,33 @@
+<div class="category-page">
+<app-header type="BASE"></app-header>
+<div class="catg-head">
+  <h4>{{clickedCategory}}</h4>
+  <h5>All {{clickedCategory}} categories</h5>
+  <div class="category-slider">
+    <app-sub-category></app-sub-category>
+  </div>
+</div>
+<div class="latest-arrivals apparel">
+  <h2>Best sellers {{clickedSubCategory}}</h2>
+  <ul>
+    <ng-container *ngFor="let item of items;let i=index">
+      <li *ngIf="i < itemDisplayCount">
+        <app-item-card [item]="item"></app-item-card>
+      </li>
+    </ng-container>
+  </ul>
+  <ion-label *ngIf="itemDisplayCount <= items.length" (click)="showMoreBestItems()" class="see-all">See all Categories <img src="../../assets/images/rightarrow.svg" alt=""> </ion-label>
+</div>
+
+<div class="latest-arrivals apparel">
+  <h2>Sales {{clickedSubCategory}}</h2>
+  <ul>
+    <ng-container *ngFor="let item of itemSales;let i=index">
+      <li *ngIf="i < itemSalesDisplayCount">
+        <app-item-card [item]="item"></app-item-card>
+      </li>
+    </ng-container>
+  </ul>
+  <ion-label *ngIf="itemSalesDisplayCount <= items.length" (click)="showMoreSalesItems()" class="see-all">See more <img src="../../assets/images/rightarrow.svg" alt=""> </ion-label>
+</div>
+</div>

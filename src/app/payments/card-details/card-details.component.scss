@@ -1,0 +1,149 @@
+::-webkit-input-placeholder { /* Edge */
+    color: #D5D6D5;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #D5D6D5;
+}
+
+::placeholder {
+    color: #D5D6D5;
+}
+
+.add-card-page {
+    min-height: 100vh;
+    background: #F7F8FA;
+    padding: 0px 0 20px;
+    overflow-y: auto;
+}
+.empty-margin-header
+{
+    height: 120px;
+}
+
+.payment-header {
+    text-align: center;
+    padding: 60px 0 20px;
+    position: fixed;
+    background: #f7f8fa;
+    width: 100%;
+    .back-arr {
+        position: absolute;
+        left: 20px;
+        top: 70px;
+    }
+    h2 {
+        margin: 0;
+        font-family: 'Futura Md BT';
+        font-size: 26px;
+        color: #0D1724;
+    }
+}
+
+.card-img {
+    margin: 0 35px;
+    background: #FF6969;
+    border-radius: 20px;
+    box-shadow: 0px 8px 15px #00000029;
+    padding: 35px 24px;
+    .visa-img {
+        text-align: right;
+        padding-bottom: 20px;
+    }
+    h3 {
+        margin: 0;
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 900;
+        font-size: 18px;
+    }
+    p {
+        margin: 0;
+        padding: 15px 0 0 0;
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 900;
+        font-size: 18px;
+    }
+}
+
+.form-paym {
+    padding: 40px 35px;
+    .form-pay-flex {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -7px;
+        .pay-form-fields {
+            width: 100%;
+            padding: 0 15px 25px;
+            label {
+                width: 100%;
+                color: #FF6969;
+                display: block;
+                font-size: 14px;
+                font-family: 'Futura LT';
+                font-weight: normal;
+            }
+            input {
+                border: 0;
+                border-bottom: 1px solid #CFD1D3;
+                width: 100%;
+                background: transparent;
+                height: 40px;
+                outline: 0;
+                color: #000000;
+                font-size: 13px;
+                font-family: 'Futura LT';
+                border-radius: 0;
+                font-weight: normal;
+            }
+            input:focus
+            {
+                border-bottom: 1px solid #FF6969;
+            }
+        }
+        .pay-form-fields.half {
+            width: 50%;
+        }
+    }
+    .pay-add-btn {
+        margin: 60px 0 0;
+        button {
+            appearance: none;
+            background: #695EFC;
+            width: 100%;
+            color: #fff;
+            height: 55px;
+            border-radius: 45px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            outline: 0;
+            font-size: 18px;
+        }
+    }
+}
+.save-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+        color: #0D1724;
+        font-size: 16px;
+        font-family: 'Futura LT';
+        font-weight: normal;
+    }
+}
+span.err-msg {
+    font-size: 10px;
+    color: red;
+}
+
+ion-toggle {
+    width: 60px;
+    height: 30px;
+  --background:#e8e8e9;
+  --background-checked: red;
+
+  --handle-background: #e8e8e9;
+  --handle-background-checked: #FF6969;
+}

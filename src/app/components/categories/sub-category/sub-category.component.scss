@@ -1,0 +1,40 @@
+.category-page{
+    padding: 30px 0 20px;
+    position: relative;
+    ion-slide {
+        flex-wrap: wrap;
+        padding: 0 14px 0 0;
+        h3 {
+            display: block;
+            width: 100%;
+            color: #191919;
+            font-size: 11px;
+            text-align: center;
+            font-family: 'Futura Md BT';
+            margin: 0;
+            padding: 10px 0 0;
+        }
+        img {
+            max-width: 66px;
+        }
+    }
+    .prev-next-icon {
+        button {
+            position: absolute;
+            background: transparent;
+            border: 0;
+            box-shadow: none;
+            outline: 0;
+        }
+        button.next {
+            right: -12px;
+            top: 44%;
+            transform: translateY(-50%);
+        }
+        button.prev {
+            left: -20px;
+            top: 44%;
+            transform: translateY(-50%) rotate(180deg);
+        }
+    }
+}

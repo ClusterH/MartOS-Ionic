@@ -1,0 +1,19 @@
+<div class="item-card" (click)="getItemDetails(item)">
+  <div class="item-card-inner">
+    <div class="item-card-image">
+      <img [src]="item.imageUrl">
+    </div>
+    <h2>{{item.name}}</h2>
+    <p><span class="marker-img"> <img src="../../../assets/images/marker.svg" alt=""> </span>
+      <span>{{item.storeName}}</span></p>
+    <div class="price-review">
+      <span class="price">
+        ${{item.price}}
+      </span>
+      <span class="review">
+        <img src="../../../assets/images/star.svg" alt=""> {{item.rating}}
+      </span>
+    </div>
+    <span class="add-product"> <img src="../../../assets/images/plus-icon.svg" alt=""> </span>
+  </div>
+</div>

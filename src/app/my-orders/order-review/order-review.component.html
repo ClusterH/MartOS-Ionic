@@ -1,0 +1,40 @@
+<ion-content fullscreen>
+<div class="order-preview review-wrap">
+  <app-header label="Write a review"></app-header>
+  <div class="listing-orders">
+    <ul>
+      <li>
+        <div class="listing-wrap">
+          <div class="order-list-flex">
+            <div class="order-list-left">
+              <img [src]="order.image">
+            </div>
+            <div class="order-list-right">
+              <h3>Order #{{order.id}}</h3>
+              <p>Total: ${{order.total}}</p>
+              <p>Delivered: {{order.deliveryDate}}</p>
+            </div>
+          </div>
+          <div class="write-review">
+            <h3 *ngIf="!isSubmitted">Write a review</h3>
+            <ion-rating [rate]="reviewRating"
+              (rateChange)="onRateChange($event)"
+              size="default">
+            </ion-rating>
+            <textarea
+              (ionBlur)="content($event)"
+              [value]="rcontent"
+              [disabled]="isSubmitted"
+              [readonly]="isSubmitted"
+              placeholder="Write a feedback."
+            ></textarea>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="add-rev-btn" *ngIf="!isSubmitted">
+    <button (click)="addReview()"> Add review</button>
+  </div>
+</div>
+</ion-content>

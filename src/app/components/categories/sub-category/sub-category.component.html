@@ -1,0 +1,16 @@
+<div class="category-page">
+    <div class="prev-next-icon">
+        <button *ngIf="activeIndex > 0" (click)="action('PREV')" class="prev"> <img src="../../../assets/images/rightarrow.svg" alt=""> </button>
+        <button class="next" (click)="action('NEXT')"> <img src="../../../assets/images/rightarrow.svg" alt=""> </button>
+    </div>
+    <ion-slides class="category-slide" #slides (ionSlideDidChange)="slideChanged($event)" [options]="{spaceBetween: 1,slidesPerView:4,speed: 400}" >
+        <div *ngFor="let category of categories">
+            <ion-slide (click)="selectCategory(category.name)">
+                <div class="category-image">
+                    <img src="../../../assets/images/home-decor.png" alt="">
+                </div>
+                <h3>{{category.name}}</h3>
+            </ion-slide>
+          </div>
+    </ion-slides>
+</div>

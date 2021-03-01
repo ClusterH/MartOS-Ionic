@@ -1,0 +1,156 @@
+.search-comp-page{
+    background-color: #F7F8FA;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+.latest-arrivals {
+    padding: 22px 25px 0px;
+    background-color: #F7F8FA;
+    margin-bottom: 70px;
+    h2 {
+        margin: 0;
+        color: #191919;
+        font-size: 19px;
+        font-family: 'Futura Md BT';
+    }
+    ul {
+        margin: 0 -7px;
+        display: flex;
+        padding: 20px 0 0 0;
+        flex-wrap: wrap;
+        li {
+            list-style: none;
+            width: 50%;
+        }
+    }
+}
+.searxh-comp {
+    background: #f7f8fa;
+    padding: 10px 22px;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    .search-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h3 {
+            color: #191919;
+            font-size: 19px;
+            font-family: 'Futura LT';
+            margin: 0;
+        }
+    }
+    .input-type{
+        width: 100%;
+        position: relative;
+        input{
+            box-shadow: none;
+            color: #727C8E;
+            border-radius: 50px;
+            background: rgba(114, 124, 142, 0.1);
+            padding: 13px 0px 13px 40px;
+            width: 100%;
+            border: 0;
+            outline: 0;
+            margin: 20px 00 0;
+            font-family: 'Futura LT';
+        }
+        span {
+            position: absolute;
+            left: 18px;
+            top: 36px;
+            img {
+                width: 15px;
+            }
+        }
+    }
+}
+// latest-arrivals
+// apparels
+.latest-arrivals.apparel {
+    border-top: 5px solid #FFFFFF;
+}
+
+.shop-by-categ{
+    border-top: 5px solid #FFFFFF;
+    padding: 22px 20px 0;
+    background-color: #F7F8FA;
+    h2{
+        margin: 0;
+        color: #191919;
+        font-size: 19px;
+        font-family: 'Futura Md BT';
+    }
+}
+
+// menu-items
+.menu-items {
+    background: #f6f7f9;
+    padding: 25px 20px 25px;
+}
+// see-all
+.see-all {
+    font-family: 'Futura LT';
+    padding: 5px 0 20px;
+    font-weight: normal;
+    display: inline-block;
+    font-size: 15px;
+    color: #191919;
+}
+
+.see-all img {
+    margin-left: 5px;
+}
+
+.below-header-wrapp {
+    background: #f7f8fa;
+    padding: 40px 25px;
+    display: flex;
+    justify-content: space-between;
+    h2 {
+        margin: 0;
+        color: #191919;
+        font-size: 19px;
+    }
+}
+
+.tags {
+    background: #f7f8fa;
+    padding: 20px 25px 0;
+    margin:80px 0 0 0;
+}
+
+.hometabs {
+    background: #f7f8fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    span {
+        margin: 0 10px;
+        outline: 0;
+        span.tab-text {
+            font-family: 'Futura Md BT';
+            font-size: 12px;
+            color: #191919;
+            outline: 0;
+        }
+        img {
+            max-width: 11px;
+        }
+    }
+    
+    span.active {
+        background: #695EFC;
+        border-radius: 50px;
+        box-shadow: 0px 3px 6px #00000029;
+        padding: 9px 20px;
+        span.tab-text {
+            color: #fff;
+        }
+    }
+}   

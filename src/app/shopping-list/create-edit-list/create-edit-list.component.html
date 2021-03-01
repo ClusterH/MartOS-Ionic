@@ -1,0 +1,32 @@
+<ion-content>
+  <div class="back-operation" (click)="backClicked()">
+    <span class="material-icons">
+      keyboard_arrow_left
+    </span>
+  </div>
+  <div class="sub-title">
+    <span *ngIf="currentId==='';else editModetext">Create a new shopping List</span>
+    <ng-template #editModetext>
+      <span>
+        Update {{ListForm.get('name').value}}
+      </span>
+    </ng-template>
+  </div>
+  <form class="form-container" [formGroup]="ListForm" (ngSubmit)="submitForm()">
+    <ion-item>
+      <ion-input type="text" placeholder="Name" formControlName="name"></ion-input>
+    </ion-item>
+    <div class="checkbox-area">
+      <span class="label-text">My list is Permanent</span>
+      <ion-checkbox color="primary" mode="md" formControlName="shoppingListType" color="tertiary"></ion-checkbox>
+      <span class="info-text">If you select this option, your articles will remain <br>on your list even after you
+        purchase them.</span>
+    </div>
+
+    <div class="button-wrapper">
+      <ion-button type="submit" expand="block" color="tertiary" [disabled]="!ListForm.valid">
+        <span>{{currentId!==''?'Update':'Create'}}</span>
+      </ion-button>
+    </div>
+  </form>
+</ion-content>

@@ -1,0 +1,43 @@
+<div class="payment-page">
+  <div class="payment-header">
+    <div class="back-arr" (click)="backClicked()">
+      <img src="../../../../../assets/images/back-arrow.svg" alt="">
+    </div>
+    <h2>Payment</h2>
+  </div>
+  <div class="empty-margin-header"></div>
+  <div class="pay-cards">
+    <ul *ngIf="cardInfos.length>0; ">
+      <div *ngFor="let cardInfo of cardInfos; let index = index">
+        <li>
+          <!-- <span (click)="addCard(true, cardInfo.id)" class="editimg">
+          <img src="../../../assets/images/editbig.png" alt="">
+        </span> -->
+
+          <div class="card-header">
+            <h2>Credit card {{index}}</h2>
+            <ion-checkbox [(ngModel)]="cardInfo.isEnabled" (ngModelChange)="setDefaultCard(cardInfo)">
+            </ion-checkbox>
+          </div>
+
+          <div class="card-flex">
+            <div class="card-img">
+              <div class="visa-img">
+                <img src="../../../assets/images/visa.svg" alt="">
+              </div>
+              <h3>{{cardInfo?.name}}</h3>
+              <p>{{cardInfo?.number}}</p>
+            </div>
+            <div class="card-info">
+              <p>VISA {{cardInfo?.number}}</p>
+              <p>Exp. date {{cardInfo?.expiry}}</p>
+            </div>
+          </div>
+        </li>
+      </div>
+    </ul>
+  </div>
+  <div class="add-card-btn">
+    <button (click)="addCard()">Add Card</button>
+  </div>
+</div>

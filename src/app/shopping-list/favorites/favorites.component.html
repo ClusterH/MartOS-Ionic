@@ -1,0 +1,6 @@
+<ng-container *ngIf="list">
+  <ng-container *ngFor="let article of list.onlineArticles">
+    <app-list-article [article]="article" (delete)="deleteArticle($event)" (addTolist)="addToList($event)">
+    </app-list-article>
+  </ng-container>
+</ng-container>

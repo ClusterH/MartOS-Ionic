@@ -1,0 +1,325 @@
+.order-detail {
+    min-height: 100vh;
+    background: #f5f8fa;
+    overflow-y: auto;
+    .items-wrap {
+        padding: 21px 12px 0px 12px;
+        h3 {
+            margin: 0;
+            color: #695EFC;
+            font-size: 18px;
+            font-family: 'Futura Md BT';
+            font-weight: bold;
+        }
+        .paddingHeader{
+            padding-top: 10px;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            background: #ffffff 0% 0% no-repeat padding-box;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 8px #70707050;
+            border-radius: 6px;
+            opacity: 1;
+            .divContent{
+                margin-left:16px;
+            }
+            li {
+                list-style: none;
+                padding: 16px 0 0 0;
+                display: flex;
+                .item-img {
+                    position: relative;
+                    width: 50px !important;
+                    height:50px !important;
+                    min-width: 50px !important;
+                    min-height:50px !important;
+                    img{
+                        width: 50px !important;
+                        height:50px !important;
+                    }
+                    .close {
+                        position: absolute;
+                        top: -6px;
+                        left: -6px;
+                        background: white;
+                        height: 15px !important;
+                        width: 15px !important;
+                        margin: 0;
+                        padding: 0;
+                        border-radius: 6px;
+                    }
+                }
+                .item-text {
+                    padding: 0 14px;
+                    float:left;
+                    h4 {
+                        margin: 0;
+                        color: #0D1724;
+                        font-weight:bold;
+                        font-size: 12px;
+                        font-family: 'Futura LT';
+                        min-width: 60px;
+                        float:left;
+                    }
+                    h3 {
+                        margin: 0;
+                        color: #0D1724;
+                        font-size: 11px;
+                        font-family: "Avenir Next";
+                        font-weight: normal;
+                        float: left; 
+                        width: 100%;
+                    }
+                    p {
+                        font-weight: bold;
+                        color: #030303;
+                        font-family: 'Avenir Next';
+                        margin: 0;
+                        font-size: 12px;
+                        padding: 0;
+                        float: right;
+                    }
+                    span {
+                        color: #747576;
+                        display: block;
+                        font-size: 12px;
+                        font-family: 'Futura LT';
+                        padding-bottom: 2px;
+                        float: left;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .delivery-wrap {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 8px #70707050;
+        border-radius: 6px;
+        opacity: 1;
+        margin-top: 19px;
+        margin-right: 12px;
+        margin-left: 12px;
+        padding-bottom: 10px;
+        h3 {
+            margin: 0;
+            color: #695EFC;
+            font-size: 18px;
+            font-family: "Futura Md BT";
+            margin-left: 10px;
+            padding-top: 10px;
+            font-weight: bold;
+        }
+        .del-flex {
+            display: flex;
+            margin: 12px 0 0 0;
+            align-items: center;
+            span {
+                width: 70px;
+                height: 70px;
+                background: #fff;
+                border-radius: 50%;
+                text-align: center;
+                display: block;
+                align-items: center;
+                justify-content: center;
+                margin-left: 20px;
+                img {
+                    max-width: 56px;
+                }
+            }
+            .delv-flex {
+                padding-left: 20px;
+                width: calc(100% - 70px);
+            }
+            
+            .delv-one {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 5px;
+            }
+            
+            .delv-one p {
+                color: #0D1724;
+                padding: 0 !important;
+                font-family: "Futura LT";
+                font-size: 15px;
+                margin: 0;
+            }
+            
+            .delv-two {
+                color: #B0B0B0;
+                font-size: 13px;
+                font-family: 'Futura LT';
+                
+            }
+            .cartTitle{
+                padding:0;
+                float: left;
+                width: 100%;
+                color: black;
+                font-size: 15px;
+                font-family: 'Avenir Next Regular';
+                margin: 0;
+            }
+        }
+        .pin{
+            height: 18px;
+            vertical-align: middle;
+        }
+        .black{
+            color:#0D1724 !important;
+        }
+        .order-flex {
+            padding-left: 20px;
+        }
+        
+        .order-de-one.first {
+            padding-bottom: 2px;
+            font-family: 'Futura LT';
+            color: #0D1724;
+        }
+        
+        .order-de-one {
+            font-size: 13px;
+            color: #B0B0B0;
+            padding-bottom: 6px;
+        }
+    }
+    .card-flex {
+        display: flex;
+        align-items: flex-end;
+        width: 90%;
+        .card-img {
+            background: #FF6969;
+            border-radius: 5px;
+            box-shadow: 0px 8px 15px #00000029;
+            padding: 17px 11px;
+            font-size: 8px;
+            width: 50px;
+            height: 27px;
+            margin: 5px 21px 0 0;
+            background: transparent linear-gradient(120deg, #ff6969 0%, #695efc 100%) 0% 0% no-repeat padding-box;
+            background: transparent linear-gradient(120deg, #FF6969 0%, #695EFC 100%) 0% 0% no-repeat padding-box;
+
+            
+            img {
+                max-width: 27px !important;
+                width: 27px !important;
+                margin-top: 3px !important;
+                margin-left: 5px !important;
+            }
+            h3 {
+                margin: 0;
+                color: #fff;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 900;
+                font-size: 8px;
+                padding: 10px 0 5px;
+            }
+            p {
+                margin: 0;
+                color: #fff;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 900;
+                text-align: left;
+                padding: 5px 0 0 0;
+            }
+            .card-name{
+                padding-bottom: 5px;
+            }
+        }
+        .card-info{
+            p {
+                color: #000000;
+                font-size: 15px;
+                font-family: 'Futura LT';
+                margin: 0;
+                padding: 0px 0 0px 0;
+            }
+        }
+    }
+    .order-again {
+        padding: 0 22px 30px;
+        button {
+            background: #695EFC;
+            width: 100%;
+            color: #fff;
+            height: 55px;
+            border-radius: 50px;
+            font-size: 18px;
+            background: #695efc 0% 0% no-repeat padding-box;
+            background: #695EFC 0% 0% no-repeat padding-box;
+            border-radius: 45px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            outline: 0;
+            img{
+                width:24px;
+                height:24px;
+                vertical-align: middle;
+            }
+        }
+    }
+    .delivery-wrap-cart{
+        margin-top: 25px;
+        margin-right: 12px;
+        margin-left: 12px;
+        padding-bottom: 15px;
+    }
+    .sub{
+        width: 100% !important;
+    }
+    .subtotal {
+        margin: 17px 0 0 0;
+        border-top: 1px solid #c3bff3;
+        ul {
+            padding: 20px 0 0 0;
+            margin: 0 auto;
+            background: transparent;
+            box-shadow: none;
+            li {
+                display: flex;
+                padding-bottom: 15px !important;
+                padding-top: 0 !important;
+                width: 70%;
+                margin-left: 20%;
+                p {
+                    margin: 0;
+                    color: #0D1724;
+                    font-size: 15px;
+                    font-family: 'Avenir Next';
+                }
+                p:first-child {
+                    text-align: left;
+                    width: 60%;
+                }
+            }
+            li.total p {
+                font-family: 'Avenir Next';
+                font-weight: bold;
+            }
+        }
+    }
+    .inc-order {
+        background: #fff;
+        border-radius: 4px;
+        margin: 10px 0 0 0;
+        width: 26px;
+        height: 26px;
+        line-height: 22px;
+        box-shadow: 0px 0px 2px #00000029;
+    }
+    .plus-minus {
+        text-align: center;
+    }
+    .inc-order p {
+        margin: 0;
+        padding: 3px 0 3px 0;
+        font-family: "Avenir Next";
+        font-weight: bold;
+        font-size: 13px;
+    }
+}

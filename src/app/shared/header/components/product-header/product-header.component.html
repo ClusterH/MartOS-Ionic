@@ -1,0 +1,19 @@
+<div class="product-header" [ngClass]="disableDeaher?'inner-header':''">
+  <div class="header-flexx" [ngClass]="disableDeaher?'inner-flex':''">
+    <div class="back-arr" (click)="backClicked()" *ngIf="!disableDeaher">
+      <img src="../../../../../assets/images/back-arrow.svg" alt="">
+    </div>
+    <div class="hed-prod-detail">
+      <h3>{{productDetail.name}}</h3>
+      <p class="price-rat">
+        <span class="pric">{{articleDetail.price}}</span>
+        <span class="rate"> <img src="../../../../../assets/images/star.svg" alt=""> 4.5 </span>
+      </p>
+    </div>
+    <div class="cart-add" routerLink="/my-orders/cart" *ngIf="!disableDeaher">
+      <img src="../../../../../assets/images/cart.svg" alt="">
+      <span class="total-prod">1</span>
+    </div>
+  </div>
+</div>
+<div class="empty-prod-header" *ngIf="!disableDeaher"></div>

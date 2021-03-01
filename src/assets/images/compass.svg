@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.073" height="22.073" viewBox="0 0 22.073 22.073">
+  <g id="Group_1778" data-name="Group 1778" transform="translate(-304.964 -663.963)">
+    <g id="Group_6" data-name="Group 6" transform="translate(1.776 1.776)">
+      <line id="Line_16" data-name="Line 16" y2="5.651" transform="translate(314.224 663.687)" fill="none" stroke="#0d1724" stroke-linecap="round" stroke-width="3"/>
+      <line id="Line_17" data-name="Line 17" y2="5.651" transform="translate(314.224 677.109)" fill="none" stroke="#0d1724" stroke-linecap="round" stroke-width="3"/>
+      <line id="Line_18" data-name="Line 18" y2="5.651" transform="translate(304.687 673.224) rotate(-90)" fill="none" stroke="#0d1724" stroke-linecap="round" stroke-width="3"/>
+      <line id="Line_19" data-name="Line 19" y2="5.651" transform="translate(318.109 673.224) rotate(-90)" fill="none" stroke="#0d1724" stroke-linecap="round" stroke-width="3"/>
+      <g id="Ellipse_6" data-name="Ellipse 6" transform="translate(306.224 665.224)" fill="#fff" stroke="#0d1724" stroke-width="3">
+        <circle cx="8" cy="8" r="8" stroke="none"/>
+        <circle cx="8" cy="8" r="6.5" fill="none"/>
+      </g>
+      <circle id="Ellipse_7" data-name="Ellipse 7" cx="3" cy="3" r="3" transform="translate(311.224 670.224)" fill="#fd6969"/>
+    </g>
+  </g>
+</svg>

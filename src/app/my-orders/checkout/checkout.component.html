@@ -1,0 +1,57 @@
+<ion-content fullscreen>
+  <app-header label="Cart Checkout"></app-header>
+  <!-- <span class="total-items">3 Items</span> -->
+  <!-- ITEMS -->
+  <div class="order-detail">
+    <h3>My Bag</h3>
+    <div class="items-wrap">
+      <ul>
+        <li *ngFor="let item  of cart?.onlineArticles; let index = index">
+          <div class="item-img">
+            <img [src]="item.urls[0]">
+          </div>
+          <div class="item-text">
+            <h4>{{item.storeName}}</h4>
+            <h5>{{item.name}}</h5>
+            <span>{{getItemColor(item)}} - {{ getItemSize(item) }}</span>
+          </div>
+          <div class="item-price">
+            <span>${{item.price}}</span>
+            <span *ngIf="false" class="total-warning"><img src="../../../assets/images/warning.png">Pick up only</span>
+          </div>
+          <div class="close" (click)="remove(index)">
+          </div>
+        </li>
+      </ul>
+      <div class="total">
+        <span>{{ cart?.onlineArticles.length }} Items: Total <span class="total-price">${{total}}</span></span>
+      </div>
+    </div>
+
+    <app-shipping [form]="form" [cart]="cart"></app-shipping>
+
+    <div class="checkout-total">
+      <ul>
+        <li>
+          <p>Subtotal</p>
+          <p>$ {{cart?.subTotal}}</p>
+        </li>
+        <li>
+          <p>Tax</p>
+          <p>$ {{cart?.tax}}</p>
+        </li>
+        <li>
+          <p>Delivery</p>
+          <p>$ 6,00</p>
+        </li>
+        <li class="total">
+          <p>Total</p>
+          <p>$ {{cart?.total}}</p>
+        </li>
+      </ul>
+    </div>
+    <div class="order-again">
+      <button (click)="checkout()"> <img src="../../../assets/images/shield.png" alt=""> Pay Now</button>
+    </div>
+  </div>
+</ion-content>

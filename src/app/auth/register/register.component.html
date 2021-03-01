@@ -1,0 +1,58 @@
+<div class="login-screen">
+  <div class="top-cart-header">
+    <div class="back-arrow" (click)="backClicked()">
+      <img src="../../../assets/images/back-arrow.svg" alt="">
+    </div>
+    <div class="cart-only">
+      <img src="../../../../../assets/images/cart.svg" alt="">
+      <span class="total-prod">1</span>
+    </div>
+  </div>
+  <h1>Register</h1>
+  <form class="register-form" [formGroup]="registerFormControl">
+    <div class="log-inp-filed">
+      <input
+          autocomplete="off"
+          formControlName="email"
+          type="text"
+          class="form-control"
+          placeholder="Email"
+        />
+        <span
+          *ngIf="
+            registerFormControl.touched &&
+            registerFormControl.controls.email.errors
+          "
+          class="login-errmsg"
+          >Email is Required</span
+        >
+    </div>
+    <div class="log-inp-filed">
+      <input
+        type="password"
+        formControlName="password"
+        class="password form-control"
+        placeholder="Password"
+      />
+      <span
+        *ngIf="
+          registerFormControl.touched &&
+          registerFormControl.controls.password.errors
+        "
+        class="login-errmsg"
+        >Password is Required</span
+      >
+    </div>
+    <div class="sing-bnt">
+      <button
+          type="submit"
+          class="btn btn-theme btn-block"
+          name="submit"
+          value="Create Account"
+          (click)="register()"
+        >
+          Create Account
+        </button>
+    </div>
+  </form>
+</div>

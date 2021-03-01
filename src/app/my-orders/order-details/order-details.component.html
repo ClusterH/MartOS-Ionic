@@ -1,0 +1,124 @@
+<ion-content fullscreen>
+  <app-header label="Order {{order.displayId}}"></app-header>
+  <!-- ITEMS -->
+  <div class="order-detail">
+    <div class="items-wrap">
+      <ul>
+        <div class="divContent">
+        <h3 class="paddingHeader">Items</h3>
+        <li *ngFor="let item  of order.articles">
+          <div class="item-img">
+              <img class="close" src="../../../assets/images/cross-order.svg" />
+            <img [src]="item.imageUrl">
+          </div>
+          <div class="item-text">
+            <div style="width:100%;float:left;">
+            <h4>{{item.brand}}</h4>
+            <p>${{item.subTotal}}</p>
+            </div>
+            <h3>{{item.name}}</h3>
+            <span>{{item.optionsStr}}</span>
+          </div>
+        </li>
+        <div class="subtotal">
+        <ul>
+          <li>
+            <p class="sub">{{order?.articles?.length}} Items: Total <b>${{order.total}}</b></p>
+          </li>
+        </ul>
+      </div>
+        </div>
+      </ul>
+    </div>
+    <!-- ITEMS -->
+    <!-- delivery-mode -->
+    <div class="delivery-wrap">
+      <h3>Delivery Mode</h3>
+      <div class="del-flex">
+        <span><img src="../../../assets/images/car.png" alt=""></span>
+        <div class="order-flex">
+          <div class="order-de-one first">
+            {{order.deliveryType}}
+          </div>
+          <div class="order-de-one two">
+            <img class="pin" src="../../../assets/images/location1.png" /> Brut
+          </div>
+          <div class="order-de-one two">
+            {{order.completeAddress}}
+          </div>
+          <div class="order-de-one three">
+            {{order.storeTime}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- shipping-mode -->
+    <div class="delivery-wrap">
+      <h3>Shipping address</h3>
+      <div class="del-flex">
+        <span><img [src]="order.image"></span>
+        <div class="delv-flex">
+          <div class="delv-one">
+            {{order.name}}
+          </div>
+          <div class="order-de-one two">
+            {{order.shippingAddress}} <!-- {{order.shippingAddres}} -->
+          </div>
+          <div class="order-de-one two">
+            {{order.additionalAddress}}
+          </div>
+          <div class="order-de-one black">
+            {{order.phoneNumber}}
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <!-- payment-mode -->
+    <div class="delivery-wrap">
+      <h3>Payment</h3>
+      <div class="card-flex del-flex">
+          <span >
+            <div class="card-img">
+              <img class='card' src="../../../assets/images/visa.svg" alt="">
+            </div>
+          </span>        
+        <div class="delv-flex">
+          <div class="delv-one card-name">
+           <h3 class="cartTitle">Jane Doe</h3>
+          </div>
+          <div class="card-info">
+            <p>**** **** **** 4423</p>
+            <p>Exp. date 17/11</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="delivery-wrap-cart">
+      <div class="subtotal">
+        <ul>
+          <li>
+            <p>Subtotal</p>
+            <p>$ {{order.subTotal}}</p>
+          </li>
+          <li>
+            <p>Tax</p>
+            <p>$ {{order.vat}}</p>
+          </li>
+          <li>
+            <p>Pick up</p>
+            <p>$ {{order.vat}}</p>
+          </li>
+          <li class="total">
+            <p>Total</p>
+            <p>$ {{order.total}}</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="order-again">
+      <!-- <button>{{orderId == 'new' ? 'Pay Now': 'Order again'}}</button> -->
+        <button>Download the invoice <img src="../../../assets/images/print.svg"></button>
+    </div>
+  </div>
+</ion-content>

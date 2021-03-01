@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Search an article
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 2</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <input [(ngModel)]="searchName"/><button type="button" (click)="search()" class="btn btn-info">Search</button>
+  <table class="table table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Brand</th>
+        <th scope="col">Price</th>
+        <th scope="col">Availabilty</th>
+        <th scope="col">product types</th>
+        <th scope="col">opions</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let articleData of articleDatas" >
+          <td>{{articleData.name}}</td>
+          <td>{{articleData.brand}}</td>
+          <td>{{articleData.price}}</td>
+          <td>{{articleData.totalStock}}</td>
+          <td>{{articleData.allProductTypes}}</td>
+          <td>{{articleData.allOptions}}</td>
+   </tbody>
+  </table>
+</ion-content>

@@ -1,0 +1,80 @@
+.home-component{
+    background-color: #F7F8FA;
+    min-height: 100vh;
+    overflow-y: auto;
+    padding-bottom: 70px;
+}
+.latest-arrivals {
+    padding: 22px 25px 0;
+    background-color: #F7F8FA;
+    h2 {
+        margin: 0;
+        color: #191919;
+        font-size: 19px;
+        font-family: 'Futura Md BT';
+    }
+    ul {
+        margin: 0 -7px;
+        display: flex;
+        padding: 20px 0 0 0;
+        flex-wrap: wrap;
+        li {
+            list-style: none;
+            width: 50%;
+        }
+    }
+}
+// latest-arrivals
+// apparels
+.latest-arrivals.apparel {
+    border-top: 5px solid #FFFFFF;
+}
+
+.shop-by-categ{
+    border-top: 5px solid #FFFFFF;
+    padding: 22px 20px 0;
+    background-color: #F7F8FA;
+    h2{
+        margin: 0;
+        color: #191919;
+        font-size: 19px;
+        font-family: 'Futura Md BT';
+    }
+}
+
+// menu-items
+.menu-items {
+    background: #f6f7f9;
+    padding: 25px 20px 25px;
+}
+// see-all
+.see-all {
+    font-family: 'Futura LT';
+    padding: 5px 0 20px;
+    font-weight: normal;
+    display: inline-block;
+    font-size: 15px;
+    color: #191919;
+}
+
+.see-all img {
+    margin-left: 5px;
+}
+
+.below-header-wrapp {
+    background: #f7f8fa;
+    padding: 40px 25px;
+    display: flex;
+    justify-content: space-between;
+    h2 {
+        margin: 0;
+        color: #191919;
+        font-size: 19px;
+    }
+}
+
+.tags {
+    background: #f7f8fa;
+    padding: 0 25px;
+}
+

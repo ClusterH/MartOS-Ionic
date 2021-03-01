@@ -1,0 +1,9 @@
+<div class="drawer" [ngClass]="isOpen?'max-drawer':''" #drawer>
+  <div class="ion-text-center" #drawerbtn>
+    <div class="drawer-pull" *ngIf="!isOpen"></div>
+  </div>
+  <div class="inner-content" id="inner-content" #innerContent>
+    <ng-content></ng-content>
+  </div>
+
+</div>

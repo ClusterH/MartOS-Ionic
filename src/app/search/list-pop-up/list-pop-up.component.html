@@ -1,0 +1,22 @@
+<ion-content>
+  <div class="back-operation" (click)="dismiss()">
+    <span class="material-icons close-icon">
+      close
+    </span>
+  </div>
+  <div class="sub-title">
+    <span>Pick-ups pending</span>
+  </div>
+  <ng-container *ngFor="let item of list[0].onlineArticles">
+    <app-pick-up-item [article]="item"></app-pick-up-item>
+  </ng-container>
+  <div class="seperator">
+    
+  </div>
+  <div class="sub-title">
+    <span>Shopping lists</span>
+  </div>
+  <ng-container *ngFor="let listitem of lists">
+    <app-shopping-item [item]="listitem" [viewCtrl]="viewCtrl" (showMarker)="dismissMArker($event)"></app-shopping-item>
+  </ng-container>
+</ion-content>

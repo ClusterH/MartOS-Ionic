@@ -1,0 +1,375 @@
+.order-detail {
+    min-height: 100vh;
+    background: #f5f8fa;
+    overflow-y: auto;
+    .items-wrap {
+        padding: 30px 22px;
+        h3 {
+            margin: 0;
+            color: #FF6969;
+            font-size: 18px;
+            font-family: 'Futura Md BT';
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                list-style: none;
+                padding: 20px 0 0 0;
+                display: flex;
+                .item-img {
+                    width: 100px;
+                }
+                .item-text {
+                    width: calc(100% - 120px);
+                    padding: 0 14px;
+                    h4 {
+                        margin: 0;
+                        color: #0D1724;
+                        font-size: 15px;
+                        font-family: 'Futura LT';
+                    }
+                    p {
+                        font-weight: bold;
+                        color: #030303;
+                        font-family: 'Avenir Next';
+                        margin: 0;
+                        font-size: 13px;
+                        padding: 6px 0 15px 0;
+                    }
+                    span {
+                        color: #747576;
+                        display: block;
+                        font-size: 12px;
+                        font-family: 'Futura LT';
+                        padding-bottom: 2px;
+                    }
+                }
+            }
+        }
+    }
+    .delivery-wrap {
+        padding: 30px 22px;
+        border-top: 5px solid #fff;
+        h3 {
+            margin: 0;
+            color: #FF6969;
+            font-size: 18px;
+            font-family: 'Futura Md BT';
+        }
+        .del-flex {
+            display: flex;
+            margin: 20px 0 0 0;
+            align-items: center;
+            span {
+                width: 90px;
+                height: 90px;
+                background: #fff;
+                border-radius: 50%;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    max-width: 40px;
+                }
+            }
+            .delv-flex {
+                padding-left: 20px;
+                width: calc(100% - 90px);
+            }
+
+            .delv-one {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 10px;
+            }
+
+            .delv-one p {
+                color: #0D1724;
+                padding: 0 !important;
+                font-family: "Futura LT";
+                font-size: 15px;
+                margin: 0;
+            }
+
+            .delv-two {
+                color: #B0B0B0;
+                font-size: 13px;
+                font-family: 'Futura LT';
+            }
+        }
+        .order-flex {
+            padding-left: 20px;
+        }
+
+        .order-de-one.first {
+            padding-bottom: 6px;
+            font-family: 'Futura LT';
+            color: #0D1724;
+        }
+
+        .order-de-one {
+            font-size: 13px;
+            color: #B0B0B0;
+            padding-bottom: 6px;
+        }
+    }
+    .card-flex {
+        display: flex;
+        align-items: flex-end;
+        width: 90%;
+        .card-img {
+            background: #FF6969;
+            border-radius: 10px;
+            box-shadow: 0px 8px 15px #00000029;
+            padding: 20px 14px;
+            font-size: 8px;
+            width: calc(100% - 140px);
+            margin: 20px 21px 0 0;
+            .visa-img {
+                text-align: right;
+                img {
+                    max-width: 35px;
+                }
+            }
+            h3 {
+                margin: 0;
+                color: #fff;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 900;
+                font-size: 8px;
+                padding: 10px 0 5px;
+            }
+            p {
+                margin: 0;
+                color: #fff;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 900;
+                text-align: left;
+                padding: 5px 0 0 0;
+            }
+        }
+        .card-info{
+            p {
+                color: #000000;
+                font-size: 15px;
+                font-family: 'Futura LT';
+                margin: 0;
+                padding: 0px 0 5px 0;
+            }
+        }
+    }
+    .order-again {
+        padding: 0 22px 30px;
+        button {
+            background: #695EFC;
+            width: 100%;
+            color: #fff;
+            height: 55px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            outline: 0;
+        }
+    }
+    .subtotal {
+        border-top: 1px solid #ccc;
+        margin: 30px 0 0 0;
+        ul {
+            padding: 30px 0 0 0;
+            max-width: 190px;
+            margin: 0 auto;
+            li {
+                display: flex;
+                padding-bottom: 15px !important;
+                padding-top: 0 !important;
+                p {
+                    margin: 0;
+                    color: #0D1724;
+                    font-size: 15px;
+                    font-family: 'Futura LT';
+                }
+                p:first-child {
+                    width: 130px;
+                }
+            }
+            li.total p {
+                font-family: 'Avenir Next';
+                font-weight: bold;
+            }
+        }
+    }
+    .inc-order {
+        background: #fff;
+        border-radius: 0;
+        margin: 10px 0 0 0;
+        width: 25px;
+        box-shadow: 0px 3px 6px #00000029;
+    }
+    .plus-minus {
+        text-align: center;
+    }
+    .inc-order p {
+        margin: 0;
+        padding: 3px 0 3px 0;
+        font-family: 'Avenir Next';
+        font-weight: bold;
+    }
+}
+
+.follow-detail-main {
+    background: #f5f8fa;
+    min-height: 100vh;
+    overflow-y: auto;
+    .top-follow-toggle {
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+         span {
+            padding-right: 20px;
+        }
+    }
+    .follow-toggle-main {
+        background: #fff;
+        box-shadow: 0px 2px 4px #00000029;
+        border-radius: 6px;
+        margin: 20px 20px;
+        padding: 20px 0;
+    }
+    .top-follow-toggle h2 {
+        margin: 0;
+         span.head {
+            color: #FD6969;
+            font-size: 18px;
+            font-family: 'Futura';
+            display: block;
+        }
+        span.para {
+            color: #000000;
+            font-size: 15px;
+            font-family: 'Futura LT';
+        }
+    }
+    .follow-toggle {
+        border-top: 1px solid #e7e7e7;
+        border-bottom: 1px solid #e7e7e7;
+        margin: 20px 0;
+        padding: 0px 0 0;
+         button {
+            background: transparent;
+            text-align: center;
+            width: 100%;
+            position: relative;
+            color: #695EFC;
+            font-family: 'Avenir Next';
+            font-weight: bold;
+            font-size: 15px;
+            outline: 0;
+            padding: 15px 0;
+            img {
+                position: absolute;
+                max-width: 30px;
+                top: 15px;
+                right: 33px;
+                transform: rotate(-91deg);
+                width: 14px;
+            }
+        }
+    }
+    .bottom-deliv{
+        p {
+           text-align: center;
+           margin: 0;
+           color: #000000;
+           font-weight: bold;
+           font-family: 'Futura LT';
+           font-size: 14px;
+           padding: 10px 00 0;
+       }
+        h3 {
+           margin: 0;
+           color: #000000;
+           text-align: center;
+           font-size: 15px;
+        }
+        button {
+           background: #695EFC;
+           width: 100%;
+           max-width: 130px;
+           margin: 15px auto 0;
+           border-radius: 50px;
+           height: 37px;
+           font-family: "Open Sans", sans-serif;
+           color: #fff;
+           font-weight: bold;
+           display: table;
+           outline: 0;
+       }
+    }
+   .toogle-steps {
+        background: #F7F7F7 0% 0% no-repeat padding-box;
+        box-shadow: 0 0 black;
+        padding: 15px 0;
+        margin: 0px 0 0;
+        ul {
+            padding: 0;
+            position: relative;
+            max-width: 160px;
+            margin: 0 auto;
+        }
+        li {
+            font-family: 'Avenir Next';
+            list-style: none;
+            font-size: 15px;
+            padding-bottom: 30px;
+            position: relative;
+            padding-left: 10px;
+            padding-top: 2px;
+        }
+        li:last-child {
+            padding-bottom: 0;
+        }
+    }
+}
+
+.toogle-steps ul li span {
+    position: absolute;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #CFD8DB;
+    border-radius: 50px;
+    left: -40px;
+    top: -1px;
+}
+
+.toogle-steps ul li span:before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 100%;
+    background: #CFD8DB;
+    top: 25px;
+    left: 50%;
+}
+
+.toogle-steps ul li:last-child span:before {
+    display: none;
+}
+
+.toogle-steps ul li.active span img {
+    display: block;
+}
+
+.toogle-steps ul li.active span {
+    background: #695EFC;
+    border: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.toogle-steps ul li span img {
+    display: none;
+}

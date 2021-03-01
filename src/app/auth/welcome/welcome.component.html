@@ -1,0 +1,13 @@
+<div class="welcome-wrap">
+  <div class="cart-only">
+      <img src="../../../../../assets/images/cart.svg" alt="">
+      <span class="total-prod">1</span>
+  </div>
+  <div class="hey-there">
+    <h1>Hey there!</h1>
+    <p>Source from 15 million products that are ready to ship, and leave the facility within 15 days.</p>
+    <button (click)="signIn()">Log In</button>
+    <button [routerLink]="'/auth/register'"> Create Account</button>
+    <a class="skipthis" [routerLink]="'/tabs/home'"> Skip This Page</a>
+  </div>
+</div>

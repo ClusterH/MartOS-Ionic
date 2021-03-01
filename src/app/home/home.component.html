@@ -1,0 +1,41 @@
+<div class="home-component">
+  <app-header type="MAIN" ></app-header>
+  <app-sidebar *ngIf="isSidebarEnabled"></app-sidebar>
+  <!-- <ion-searchbar></ion-searchbar> -->
+  <app-new-order></app-new-order>
+  <div class="menu-items">
+    <app-overflowable (onChangeSelection)="selectMenuItem($event)" [options]="{spaceBetween: 0,centeredSlides:false, slidesPerView: 3.4}" [children]="filters"></app-overflowable>
+  </div>
+  <div class="tags">
+    <app-overflowable [options]="{spaceBetween: 10, slidesPerView: 3.5}" hasChips="true" [children]="categoriesList"></app-overflowable>
+  </div>
+  <div class="latest-arrivals">
+    <h2>{{clickedCatName}} </h2>
+    <ul>
+      <ng-container *ngFor="let item of items;let i=index">
+      <li *ngIf="i < itemDisplayCount" >
+        <app-item-card [item]="item"></app-item-card>
+      </li>
+      </ng-container>
+    </ul>
+    <ion-label *ngIf="itemDisplayCount <= items.length" (click)="showMoreLatestItems()" class="see-all">See all latest Arrivals <img src="../../assets/images/rightarrow.svg" alt=""> </ion-label>
+  </div>
+  <!-- shop-by-categories -->
+  <div class="shop-by-categ">
+    <h2>Shop by categories</h2>
+    <app-categories></app-categories>
+  </div>
+  <!-- apparel -->
+  <div class="latest-arrivals apparel">
+    <h2>{{randomCatName}}</h2>
+    <ul>
+      <ng-container *ngFor="let item of itemsCat;let i=index">
+        <li *ngIf="i < itemsCatDisplayCount">
+          <app-item-card [item]="item"></app-item-card>
+        </li>
+      </ng-container>
+    </ul>
+    <ion-label *ngIf="itemsCatDisplayCount <= items.length" (click)="showMoreCategoryItems()"  class="see-all">See all product category <img src="../../assets/images/rightarrow.svg" alt=""> </ion-label>
+  </div>
+  <!-- apparel --> 
+</div>

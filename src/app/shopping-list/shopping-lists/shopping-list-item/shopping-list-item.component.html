@@ -1,0 +1,18 @@
+<div class="item-container" (click)="viewList()">
+  <div class="location-icon" (click)="goToLocation($event)">
+    <span class="material-icons" >
+      location_on
+      </span>
+  </div>
+  <div class="info">
+    <div class="name">
+      {{item.name}}
+    </div>
+    <div class="type" *ngIf="item.type===shoppingListType.Permanent">
+      <span>Permanent</span>
+    </div>
+  </div>
+  <div class="articles-count">
+    <span class="number">{{item.productsCount}} </span> <span>articles </span> <span *ngIf="item.productsCount<5">left</span>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+.drawer {
+    -webkit-backface-visibility: hidden;
+    /* Chrome, Safari, Opera */
+    backface-visibility: hidden;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 16px;
+    width: 100%;
+    border-radius: 20px;
+    bottom: calc(env(safe-area-inset-bottom));
+    height: 100vh;
+    z-index: 999;
+    background: #F7F8FA;
+    display: flex;
+    flex-direction: column;
+
+    &.max-drawer {
+        border-radius: 0px;
+    }
+}
+
+.drawer-pull {
+    background: #cccccc;
+    height: 4px;
+    width: 60px;
+    border-radius: 2px;
+}
+
+.ion-text-center {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+}
+
+.inner-content {
+    flex: 1;
+}

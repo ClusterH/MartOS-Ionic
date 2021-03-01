@@ -1,0 +1,59 @@
+<app-header label="Account"></app-header>
+<div class="profile-edit-wrap">
+  <!-- <div class="user-pro-img">
+    <img src="../../../assets/images/profile.png" alt="">
+    <span>
+      <img src="../../../assets/images/edit.png" alt="">
+    </span>
+  </div> -->
+  <div class="edit-prof-click">
+      <ul>
+          <li (click)="presentModal('First Name', user.name)">
+            <p>
+              <span>First Name</span>
+              <span>{{user?.name}}</span>
+            </p>
+            <p>
+              <img src="../../../assets/images/profile-right.svg" alt="">
+            </p>
+          </li>
+          <li (click)="presentModal('Last Name', user.lastName)">
+            <p>
+              <span>Last Name</span>
+              <span>{{user?.lastName}}</span>
+            </p>
+            <p>
+              <img src="../../../assets/images/profile-right.svg" alt="">
+            </p>
+          </li>
+          <li (click)="presentModal('Phone Number', user.phoneNumber)">
+            <p>
+              <span>Phone Number</span>
+              <span>{{user?.phoneNumber}}</span>
+            </p>
+            <p>
+              <img src="../../../assets/images/profile-right.svg" alt="">
+            </p>
+          </li>
+          <li>
+            <!-- (click)="presentModal('Email', user.email)" -->
+            <p>
+              <span>Email</span>
+              <span>{{user?.email}}</span>
+            </p>
+            <!-- <p>
+              <img src="../../../assets/images/profile-right.svg" alt="">
+            </p> -->
+          </li>
+          <li (click)="presentPasswordModal()">
+            <p>
+              <span>Password</span>
+              <span>***********</span>
+            </p>
+            <p>
+              <img src="../../../assets/images/profile-right.svg" alt="">
+            </p>
+          </li>
+      </ul>
+  </div>
+</div>

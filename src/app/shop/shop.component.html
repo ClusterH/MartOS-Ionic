@@ -1,0 +1,65 @@
+<div class="shop-profile-wrppp">
+  <app-header [label]="store.storeName"></app-header>
+  <img [src]="store.image" class="store-image" />
+  <div class="map-store-view">
+    <app-mapView></app-mapView>
+  </div>
+  <div class="store-view-wrap">
+    <div class="store-view">
+      <h2>Store Information</h2>
+      <p>{{store.description}}</p>
+      <ul>
+        <li>
+          <img src="../../assets/images/location-shop.png" alt=""> {{store.address}} {{store.postcode}}
+        </li>
+        <li>
+          <img src="../../assets/images/phone-shop.png" alt=""> {{store.phone}}
+        </li>
+        <li>
+          <img src="../../assets/images/clock-shop.png" alt="">
+          <span>
+            <img class="toggle-down-up" (click)="toogleTimings()" src="../../assets/images/back-arrow.svg" alt="">
+          </span>
+          <div class="showtimings" *ngIf="showTimings">
+            <p *ngFor="let week of store.weekTimings">
+              {{week}}
+            </p>
+          </div>
+        </li>
+      </ul>
+      <div class="services">
+        <h3>Services</h3>
+        <ul>
+          <li>
+            <span>
+              <img src="../../assets/images/car-del.png" alt="">
+            </span>
+            <h3>Pick-up</h3>
+          </li>
+          <li>
+            <span>
+              <img src="../../assets/images/scooter-im.png" alt="">
+            </span>
+            <h3>Delivery</h3>
+          </li>
+        </ul>
+        <a href="javascript:void(0);">
+          Get the location <img src="../../assets/images/rightarrow.svg" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="shop-catego">
+      <h3>Categories</h3>
+      <app-shopcategories></app-shopcategories>
+    </div>
+    <div class="shop-products">
+      <ul>
+        <ng-container *ngFor="let item of store.onlineProduct; let i=index">
+          <li>
+            <app-item-card [item]="item"></app-item-card>
+          </li>
+        </ng-container>
+      </ul>
+    </div>
+  </div>
+</div>

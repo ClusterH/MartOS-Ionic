@@ -1,0 +1,99 @@
+::-webkit-input-placeholder { /* Edge */
+    color: #D5D6D5;
+    font-family: 'Futura LT';
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #D5D6D5;
+    font-family: 'Futura LT';
+  }
+  
+  ::placeholder {
+    color: #D5D6D5;
+    font-family: 'Futura LT';
+  }
+
+.login-screen {
+    padding: 30px 22px 0;
+    min-height: 100vh;
+    overflow-y: auto;
+    background-color: #F7F8FA;
+    h1 {
+        color: #191919;
+        font-family: 'Futura Md BT';
+        font-size: 30px;
+        padding-bottom: 50px;
+        padding-top: 40px;
+    }
+    .log-inp-filed {
+        width: 100%;
+        padding-bottom: 20px;
+        input {
+            width: 100%;
+            color: #D5D6D5;
+            font-size: 14px;
+            border: 0;
+            border-bottom: 1px solid #ced1d3;
+            padding: 20px 0px 15px;
+            background: transparent;
+            outline: 0;
+            border-radius: 0;
+        }
+        .login-errmsg
+        {
+            color: red;
+            font-size: 10px;
+            font-family: 'Futura LT';
+        }
+    }
+    .sing-bnt button {
+        max-width: 224px;
+        width: 100%;
+        height: 40px;
+        background: #695EFC;
+        opacity: 1;
+        display: table;
+        border-radius: 50px;
+        color: #fff;
+        font-family: 'Futura LT';
+        font-size: 14px;
+        margin: 10px auto 0;
+        text-transform: uppercase;
+        outline: 0;
+    }
+    .forgt-btn{
+        text-align: center;
+        padding: 16px 0 0;
+        a {
+            color: #191919;
+            font-size: 14px;
+            font-family: 'Futura LT';
+        }
+    }
+}
+
+.top-cart-header {
+    display: flex;
+    align-items: center;
+    padding: 30px 0 0 0;
+    .back-arrow{
+        padding-top:7px;
+    }
+    .cart-only {
+        position: relative;
+        margin-left: auto;
+        display: table;
+        span {
+            position: absolute;
+            bottom: -3px;
+            left: -7px;
+            background: #695EFC;
+            border-radius: 50px;
+            padding: 0px 7px;
+            color: #fff;
+            font-size: 8px;
+            font-weight: bold;
+            font-family: "Open Sans", sans-serif;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.over-flow{
+    ion-label {
+        font-size: 10px;
+        padding: 0 5px;
+        font-family: 'Futura Md BT';
+    }
+    ion-chip {
+        background: #fff;
+        min-width: 90px;
+        display: flex;
+        color: #515C6F;
+        font-size: 10px;
+        justify-content: center;
+        border-radius: 6px;
+        height: 28px;
+        ion-label {
+            padding: 0;
+            min-width: 0;
+            font-size: 11px;
+            font-weight: normal;
+        }
+    }
+    // ion-chip.size-wrap-chip{
+    //     height: 40px !important;
+    //     border-radius: 10px;
+    //     ion-label {
+    //         font-size: 15px !important;
+    //         font-weight: 500;
+    //         color: #727C8E;
+    //     }
+    //     ion-label.active{
+    //         color: #FF6969;
+    //     }
+    // }
+}
+ion-chip.active {
+    color:#FF6969 !important;
+}

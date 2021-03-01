@@ -1,0 +1,15 @@
+<div class="item-container">
+  <div class="info">
+    <div class="name">
+      {{item.name}}
+    </div>
+    <div class="type" *ngIf="item.type===shoppingListType.Permanent">
+      <span>Permanent</span>
+    </div>
+  </div>
+  <div class="add-btn">
+    <span class="material-icons" (click)="sendAddRequest()">
+      add
+      </span>
+  </div>
+</div>

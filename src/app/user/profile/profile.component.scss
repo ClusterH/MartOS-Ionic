@@ -1,0 +1,152 @@
+
+// user-profile
+
+.user-profile {
+    padding: 30px 22px 0;
+    min-height: 100vh;
+    overflow-y: auto;
+    background-color: #F7F8FA;
+    .profile-flex {
+        display: flex;
+        align-items: flex-end;
+        padding: 40px 0 0 0;
+        .user-pro-img {
+            width: 110px;
+            height: 110px;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+        .user-info {
+            //width: calc(100% - 110px);
+            width: 100%;
+            //padding-left: 20px;
+            text-align: center;
+            h3 {
+                color: #191919;
+                font-size: 30px;
+                font-family: 'Futura Md BT';
+                margin: 0;
+                padding-bottom: 5px;
+                font-weight:bold;
+            }
+            p {
+                margin: 0;
+                a {
+                    border: 1px solid #695EFC;
+                    border-radius: 24px;
+                    height: 30px;
+                    width: 130px;
+                    display: inline-block;
+                    text-decoration: none;
+                    text-align: center;
+                    line-height: 30px;
+                    margin: 10px 0 0 0;
+                    color: #695EFC;
+                    font-family: 'Futura Md BT';
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+            }
+            span a {
+                color: #0F0F0F;
+                font-size: 15px;
+                text-decoration: none;
+                font-family: 'Futura Md BT';
+                font-weight:bold;
+            }
+        }
+    }
+    .user-listing {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 8px 15px #E7EAF0;
+        border-radius: 10px;
+        margin: 28px 0 0 0;
+        ul {
+            padding: 10px 0 0 0;
+            margin: 0;
+            li {
+                list-style: none;
+                padding: 10px 4px 10px 48px;
+                position: relative;
+                a{
+                    text-decoration: none;
+                    span {
+                        text-decoration: none;
+                        font-size: 15px;
+                        color: #000000;
+                        font-family: 'Futura Md BT';
+                        padding: 0 10px;
+                        display: block;
+                    }
+                    p {
+                        margin: 0;
+                        display: flex;
+                        align-items: center;
+                        border-bottom: 1px solid #f3f4f4;
+                        padding-bottom: 16px;
+                        i{
+                            font-style: normal;
+                        }
+                        span{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            width: 100%;
+                            img{
+                                position: relative;
+                                top: 2px;
+                            }
+                        }
+                    }
+                    span.list-icons {
+                        position: absolute;
+                        left: 10px;
+                        top: 9px;
+                    }
+                }
+            }
+            li:first-child{
+                span.list-icons {
+                
+                    top: 12px !important;
+                }
+                span{
+                    i{
+                        color: #695EFC;
+                    }
+                }
+            }
+            li:last-child{
+                p{
+                    border-bottom: 0 !important;
+                }
+            }
+        }
+    }
+    .top-cart-header {
+        display: flex;
+        align-items: center;
+        padding: 30px 0 0 0;
+        .back-arrow{
+            padding-top:7px;
+        }
+        .cart-only {
+            position: relative;
+            margin-left: auto;
+            display: table;
+            span {
+                position: absolute;
+                bottom: -3px;
+                left: -7px;
+                background: #695EFC;
+                border-radius: 50px;
+                padding: 0px 7px;
+                color: #fff;
+                font-size: 8px;
+                font-weight: bold;
+                font-family: "Open Sans", sans-serif;
+            }
+        }
+    }
+}

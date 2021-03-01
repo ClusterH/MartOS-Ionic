@@ -1,0 +1,84 @@
+<div class="follow-detail-main">
+  <app-header label="Order {{order.id}}"></app-header>
+  <div class="follow-toggle-main">
+    <div class="top-follow-toggle">
+      <span><img src="../../../assets/images/deliver-sc-or.png" alt=""></span>
+      <h2>
+        <span class="head">Shipping your order </span>
+        <span class="para">Order {{order.id}}</span>
+      </h2>
+    </div>
+    <div class="follow-toggle">
+      <button (click)="tooglePanel()">{{currentState}} <img src="../../../assets/images/back-order.png" alt=""></button>
+      <div class="toogle-steps" [hidden]="!isPanel">
+        <ul>
+          <li (click)="changeCurrentState('Preparing the Order', 1)" [ngClass]="{'active': currentStat>= 1}">
+            <span class="lefticons">
+              <img src="../../../assets/images/refresh.svg" alt="">
+            </span> Preparing the Order
+          </li>
+          <li (click)="changeCurrentState('OnGoing',2)" [ngClass]="{'active': currentStat>= 2}">
+            <span class="lefticons">
+              <img src="../../../assets/images/ongoing.svg" alt="">
+            </span> Ongoing Delivery
+          </li>
+          <li (click)="changeCurrentState('Delivered',3)" [ngClass]="{'active': currentStat>= 3}">
+            <span class="lefticons">
+              <img src="../../../assets/images/delivered.svg" alt="">
+            </span> Delivered
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-deliv">
+      <h3>Your order will be delivered in</h3>
+      <p>{{order.deliveryTime}}</p>
+      <button> Call Driver </button>
+    </div>
+  </div>
+  <!-- ITEMS -->
+  <div class="order-detail">
+    <div class="items-wrap">
+      <h3>Items</h3>
+      <ul>
+        <li *ngFor="let item  of order.items">
+          <div class="item-img">
+            <img [src]="item.image">
+          </div>
+          <div class="item-text">
+            <h4>{{item.itemName}}</h4>
+            <p>${{item.price}}</p>
+            <span *ngIf="item.color">Color: {{item.color}}</span>
+            <span *ngIf="item.size">Size: {{item.size}}</span>
+          </div>
+          <div class="plus-minus">
+
+            <div class="inc-order">
+              <p>1</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="subtotal">
+        <ul>
+          <li>
+            <p>Subtotal</p>
+            <p>$ {{order.subTotal}}</p>
+          </li>
+          <li>
+            <p>Tax</p>
+            <p>$ {{order.tax}}</p>
+          </li>
+          <li>
+            <p>Pick up</p>
+            <p>$ {{order.tax}}</p>
+          </li>
+          <li class="total">
+            <p>Total</p>
+            <p>$ {{order.total}}</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

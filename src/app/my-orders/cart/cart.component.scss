@@ -1,0 +1,229 @@
+.order-detail {
+  min-height: 100vh;
+  background: #f5f8fa;
+  overflow-y: auto;
+  h3 {
+    color: #ff6969;
+    font-size: 18px;
+    font-family: 'Futura';
+    padding-left: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .items-wrap {
+    margin: 15px 22px;
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        padding: 20px 15px;
+        display: flex;
+        position: relative;
+        width: 100%;
+        &:not(:last-child) {
+            border-bottom: 1px solid white;
+        }
+        .item-img {
+          width: 95px;
+          height: 113px;
+          border-radius: 11px;
+          img {
+            width: 95px;
+            height: 113px;
+          }
+        }
+        .close {
+          position: absolute;
+          top: 10px;
+          left: 5px;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background: white;
+          &:hover {
+            opacity: 1;
+          }
+          &:before,
+          &:after {
+            position: absolute;
+            left: 9px;
+            top: 3px;
+            content: ' ';
+            height: 15px;
+            width: 1px;
+            background-color: #707070;
+          }
+          &:before {
+            transform: rotate(45deg);
+          }
+          &:after {
+            transform: rotate(-45deg);
+          }
+        }
+
+        .item-text {
+          flex: 1;
+          padding-left: 15px;
+          display: flex;
+          flex-direction: column;
+          .item-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            h4 {
+              margin: 0px;
+              color: #0d1724;
+              font-size: 16px;
+              font-family: 'Futura';
+              font-weight: bold;
+              line-height: 21px;
+            }
+            .item-price {
+              color: #030303;
+              font-weight: bold;
+              font-family: 'Avenir Next';
+              font-size: 15px;
+              line-height: 21px;
+              margin-left: auto;
+            }
+          }
+
+          h5 {
+            margin: 0px;
+            margin-top: 2px;
+            color: #0d1724;
+            font-size: 13px;
+            font-family: 'Futura LT';
+            line-height: 17px;
+            max-width: 120px;
+          }
+          .item-detail {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-top: auto;
+            .item-size {
+              width: 50%;
+              border-right: 1px solid #8a8a8a3b;
+              span {
+                color: #747576;
+                display: block;
+                font-size: 12px;
+                font-family: 'Futura LT';
+              }
+            }
+            .item-action {
+              width: 60px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              button {
+                width: 20px;
+                height: 20px;
+                background: #d7d4fc;
+                color: #8a8a8a;
+                box-shadow: 0px 0px 3px #00000029;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+              .item-count {
+                color: #030303;
+                margin-top: 0;
+                font-size: 14px;
+                font-family: 'Avenir Next';
+              }
+            }
+          }
+        }
+      }
+    }
+    .total {
+      color: #000000;
+      font-size: 14px;
+      font-family: 'Avenir Next';
+      margin-top: 5px;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      .total-price {
+        font-weight: bold;
+      }
+    }
+  }
+  .order-again {
+    padding: 0 22px 30px;
+    button {
+      background: #695efc;
+      width: 100%;
+      color: #fff;
+      height: 55px;
+      border-radius: 50px;
+      font-size: 18px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: bold;
+      outline: 0;
+      img {
+        margin-right: 4px;
+      }
+    }
+  }
+  .total-container {
+    margin: 15px 22px;
+    .subtotal {
+      border-top: 1px solid #ccc;
+      margin: 30px 0 0 0;
+      ul {
+        padding: 30px 0 0 0;
+        max-width: 220px;
+        margin: 0 auto;
+        li {
+          display: flex;
+          padding-bottom: 15px !important;
+          padding-top: 0 !important;
+          p {
+            margin: 0;
+            color: #0d1724;
+            font-size: 15px;
+            font-family: 'Futura LT';
+          }
+          p:first-child {
+            width: 100px;
+          }
+        }
+        li.total p {
+          font-family: 'Avenir Next';
+          font-weight: bold;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+  .inc-order {
+    background: #fff;
+    box-shadow: 0px 0px 2px #00000029;
+    border-radius: 50px;
+    margin: 10px 0 0 0;
+    width: 25px;
+  }
+  .plus-minus {
+    text-align: center;
+  }
+  .inc-order p {
+    margin: 0;
+    padding: 3px 0 3px 0;
+    font-family: 'Avenir Next';
+    font-weight: bold;
+  }
+}
+
+span.total-items {
+  text-align: center;
+  background: #f5f8fa;
+  width: 100%;
+  display: block;
+  padding: 3px 0 0px 0px;
+  color: #ff6b6b;
+}

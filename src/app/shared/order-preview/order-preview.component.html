@@ -1,0 +1,26 @@
+<div class="order-preview">
+  <div class="listing-orders">
+    <ul>
+      <li>
+        <div class="listing-wrap">
+          <p class="lblOrder">{{order.creationDate}}</p>
+          <div class="order-list-flex">
+            <div class="order-list-left">
+              <img [src]="order.imageUrl">
+            </div>
+            <div class="order-list-right">
+              <h3>Order: {{order.displayId}}</h3>
+              <p>Total: ${{order.total}}</p>
+              <p>Delivered: {{order.orderCompletionDate}}</p>
+            </div>
+          </div>
+          <div class="buttons-order">
+            <button [routerLink]="'/my-orders/'+order.id">See My Order <img src="../../../assets/images/back-order.png" alt=""> </button>
+            <button *ngIf="!order.review" [routerLink]="'/my-orders/review/'+order.id"> Write a review <img src="../../../assets/images/back-order.png" alt=""></button>
+            <button *ngIf="order.review" [routerLink]="'/my-orders/review/'+order.id"> See my review <img src="../../../assets/images/back-order.png" alt=""></button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

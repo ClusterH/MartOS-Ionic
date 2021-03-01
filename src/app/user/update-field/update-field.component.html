@@ -1,0 +1,23 @@
+<div class="update-profile">
+  <div class="cross-update" (click)="dismissModal()">
+    <img src="../../../assets/images/update-cross.svg" alt="">
+  </div>
+  <div class="update-profile-field">
+    <label>{{field}}</label>
+  <!--   <input [(ngModel)]="value" (change)="close($event)" />
+    <span class="err-msg" *ngIf="!value">{{field}} is required</span> -->
+  
+  <div class="search-wrapper">
+  <form>
+  <input type="text" name="focus" [(ngModel)]="value" (change)="close($event)" required class="search-box" placeholder="{{field}}" />
+  <div class="bottom_border"></div>
+  <button class="close-icon" type="reset"></button>
+    <span class="err-msg" *ngIf="!value">{{field}} is required</span>
+    
+  </form>
+</div>
+</div>
+  <div class="update-profile-btn">
+    <button (click)="update()">Update {{field}}</button>
+  </div>
+</div>

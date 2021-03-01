@@ -1,0 +1,24 @@
+<div class="select-color-size">
+  
+  <div class="colors">
+    <h3>Select color</h3>
+    <div class="colors-wrap">
+      <div class="color"
+        (click)="onSelectColor(color.id)"
+        *ngFor="let color of maincolors"
+        [ngClass]="{'active-color': activeColor===color.value}"
+        [ngStyle]="{backgroundColor: color.value}">
+        <!-- <span *ngIf="color.id == activeColor">S</span> -->
+      </div>
+    </div>
+  </div>
+
+  <div *ngFor="let option of mainoptions">
+   <div class="sizes">
+    <h3>Select {{option.name}}</h3>
+    <div class="sizes-wrapp">
+      <app-option-dynamic [children]="option.values" [selectedOptions]=filters [options]="{spaceBetween: 20, slidesPerView: 3.5}" hasChips="true" (onChangeSelection)="changeSize($event)"></app-option-dynamic>
+    </div>
+  </div>
+ </div>
+</div>

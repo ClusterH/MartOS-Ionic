@@ -1,0 +1,169 @@
+.image-prod-slider {
+    margin: 25px auto 0;
+    background-color: #f5f8fa;
+    position: relative;
+
+    .article-btns {
+        display: flex;
+        flex-direction: column;
+        height: 180px;
+        position: absolute;
+        right: 20px;
+        top: 24px;
+        width: 61px;
+        z-index: 2;
+
+        .single-btn {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 6px;
+
+            &.favorites {
+                color: #FD6969;
+            }
+
+            span.text {
+                font-size: 10px;
+                text-align: center;
+                margin-top: 2px;
+            }
+
+            span.material-icons {
+                font-size: 29px;
+            }
+
+            span.go-icon {
+                font-weight: bold;
+            }
+
+            .inner-icon {
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+                box-shadow: 0px 0px 10px #0D172433;
+                border-radius: 50%;
+                width: 33px;
+                height: 33px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+ion-segment.prod-segment {
+    background: transparent;
+    border: 0;
+}
+
+.prod-inner-seg {
+    border: 0;
+    box-shadow: none;
+    background: transparent;
+    color: #231F20;
+    font-family: 'Futura LT';
+    font-weight: normal;
+    font-size: 15px;
+    margin: 0 5px;
+}
+
+
+ion-segment-button.prod-inner-seg.active {
+    background: #fff;
+    border-radius: 17px !important;
+    color: #FF6969;
+}
+
+.prices-wrap {
+    background: #f5f8fa;
+    font-family: 'Futura LT';
+    padding: 0 25px;
+}
+
+.prices-wrap h2 {
+    margin: 0;
+    padding: 0;
+    color: #515C6F;
+    font-size: 13px;
+    font-family: "Futura LT";
+    font-weight: bold;
+}
+
+.prices-wrap p {
+    margin: 0;
+    color: red;
+    font-size: 12px;
+    padding: 6px 0 0;
+}
+
+.prices-wrap li {
+    list-style: none;
+    margin: 0;
+    padding: 5px 0 0 0;
+    color: #515C6F;
+    font-size: 13px;
+    font-family: "Futura LT";
+}
+
+.prod-wrpp-color {
+    background: #F7F8FA;
+
+    .prod-tabs {
+        margin: 0px 5px 0px;
+        padding: 20px 10px;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            li {
+                list-style: none;
+                font-size: 15px;
+                color: #231F20;
+                font-family: 'Futura LT';
+                margin: 0 10px;
+                display: inline-block;
+                width: 33.33%;
+                text-align: center;
+            }
+
+            li.active {
+                background: #fff;
+                padding: 8px 20px;
+                border-radius: 50px;
+                color: #FF6969;
+            }
+        }
+    }
+}
+
+.add-to-cart {
+    padding: 20px 20px;
+
+    button {
+        background: #695EFF;
+        border-radius: 9px;
+        width: 100%;
+        color: #fff;
+        font-size: 17px;
+        font-family: 'Futura LT';
+        font-weight: bold;
+        height: 63px;
+        text-transform: uppercase;
+
+        img {
+            max-width: 17px;
+            position: relative;
+            top: 3px;
+            margin-left: 10px;
+        }
+    }
+}
+
+.no-margin {
+    margin: 0px;
+}

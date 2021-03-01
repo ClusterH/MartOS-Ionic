@@ -1,0 +1,43 @@
+ion-content {
+    --ion-background-color: white;
+}
+
+.back-operation {
+    display: flex;
+    padding: 30px;
+    justify-content: flex-start;
+
+    span {
+        font-size: 25px;
+    }
+}
+
+
+.close-icon {
+    z-index: 12;
+    position: absolute;
+    left: 20px;
+    top: 30px;
+}
+
+.sub-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    span {
+        font-weight: 500;
+        color: #695EFC;
+        font-size: 20px;
+        font-family: 'Futura LT';
+    }
+}
+
+.seperator {
+    height: 10px;
+    width: 100%;
+    background-color: #F1F1F1;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

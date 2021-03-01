@@ -1,0 +1,103 @@
+.card-container {
+    min-height: calc(100vh - 100px);
+    background: #f5f8fa;
+    overflow-y: auto;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 35px;
+    padding-right: 35px;
+
+    .card-img {
+        height: 170px;
+        padding: 25px;
+        background-color: #FF6969;
+        border-radius: 25px;
+        margin-bottom: 25px;
+        box-shadow: 0px 8px 15px #00000029;
+        color: white;
+
+        .visa-img {
+            text-align: right;
+            margin-top: 10px;
+        }
+    }
+}
+
+.input-field {
+    margin-bottom: 25px;
+
+    label {
+        display: block;
+        color: #FF6969;
+        font-size: 15px;
+        font-family: 'Futura LT';
+    }
+
+    input {
+        width: 100%;
+        border: 0;
+        background: transparent;
+        height: 46px;
+        color: #231F20;
+        font-size: 17px;
+        font-family: 'Futura LT';
+        border-bottom: 2px solid #CFD1D3;
+        outline: 0;
+
+        &::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #D5D6D5;
+            opacity: 1;
+            /* Firefox */
+        }
+    }
+
+    .login-errmsg {
+        font-size: 12px;
+        padding: 5px 0 0 0;
+        color: #FD6969;
+        font-family: 'Futura LT';
+    }
+}
+
+.card-btn {
+    // margin: 120px 0 0 0;
+    padding: 0 22px 30px;
+    margin-top: auto;
+
+    button {
+        background: #695EFC;
+        width: 100%;
+        color: #fff;
+        height: 55px;
+        border-radius: 50px;
+        font-size: 18px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        outline: 0;
+    }
+}
+
+.dual-fields {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+
+    .input-field {
+        padding-left: 15px;
+        padding-right: 15px;
+        flex: 1;
+    }
+}
+
+.save-card-next {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+        font-family: 'Futura LT';
+        font-size: 15px;
+    }
+}

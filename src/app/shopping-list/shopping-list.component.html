@@ -1,0 +1,32 @@
+<ion-content>
+  <div class="back-operation" (click)="backClicked()">
+    <span class="material-icons">
+      keyboard_arrow_left
+    </span>
+  </div>
+  <div class="sub-title">
+    <span>Shopping list</span>
+  </div>
+
+  <ion-segment class="no-style" [(ngModel)]="segmentModel">
+    <ion-segment-button value="shoppinglists">
+      My shopping lists
+    </ion-segment-button>
+    <ion-segment-button value="favorites">
+      My favorites
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="segmentModel">
+    <ng-container *ngSwitchCase="'shoppinglists'">
+      <app-shopping-lists></app-shopping-lists>
+    </ng-container>
+
+    <ng-container *ngSwitchCase="'favorites'">
+      <app-favorites></app-favorites>
+    </ng-container>
+
+
+  </div>
+
+</ion-content>

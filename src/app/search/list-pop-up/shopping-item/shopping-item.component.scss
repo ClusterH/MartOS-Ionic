@@ -1,0 +1,58 @@
+.item-container {
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: #E9E8FB;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #00000029;
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+
+    .go-direction {
+
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 0px 10px #0D172433;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        font-family: 'Avenir Next';
+        font-size: 14px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 17px;
+
+    }
+
+    .info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        .name {
+            color: #0D1724;
+            font-size: 13px;
+            font-family: 'Futura LT';
+            font-weight: bold;
+        }
+
+        .type {
+            color: #FD6969;
+            font-size: 9px;
+            font-family: 'Futura LT';
+            font-weight: 500;
+        }
+    }
+
+    .articles-count {
+        width: 70px;
+        font-size: 11px;
+        font-family: 'Futura LT';
+        font-weight: 500;
+
+        .number {
+            color: #695EFC;
+        }
+    }
+}

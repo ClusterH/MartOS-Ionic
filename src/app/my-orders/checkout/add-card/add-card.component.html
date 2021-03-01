@@ -1,0 +1,63 @@
+<ion-content fullscreen>
+  <app-header label="Add card"></app-header>
+  <!-- ITEMS -->
+  <div class="card-container">
+    <div class="card-img">
+      <div class="visa-img">
+        <img src="../../../assets/images/visa.svg" alt="">
+      </div>
+      <h3>Jane Doe</h3>
+      <p>1234 5678 908</p>
+    </div>
+
+    <form [formGroup]="addCardForm">
+      <div class="input-field">
+        <label>Full name</label>
+        <input autocomplete="off" formControlName="name" type="text" class="form-control" placeholder="Full name" />
+        <span *ngIf="
+        addCardForm.controls.name.touched &&
+            addCardForm.controls.name.errors
+          " class="login-errmsg">Name is Required</span>
+      </div>
+      <div class="input-field">
+        <label>Card Number</label>
+        <input type="text" formControlName="card" class="password form-control" placeholder="Card Number" />
+        <span *ngIf="
+        addCardForm.controls.card.touched &&
+            addCardForm.controls.card.errors
+          " class="login-errmsg">Card Number is Required</span>
+      </div>
+      <div class="dual-fields">
+        <div class="input-field">
+          <label>Expiry Date</label>
+          <input type="text" formControlName="expiryDate" class="password form-control" placeholder="Expiry Date" />
+          <span *ngIf="
+          addCardForm.controls.expiryDate.touched &&
+              addCardForm.controls.expiryDate.errors
+            " class="login-errmsg">ExpiryDate is Required</span>
+        </div>
+        <div class="input-field">
+          <label>cvv</label>
+          <input type="number" formControlName="cvv" class="password form-control" placeholder="cvv" />
+          <span *ngIf="
+          addCardForm.controls.cvv.touched &&
+              addCardForm.controls.cvv.errors
+            " class="login-errmsg">CVV is Required</span>
+        </div>
+      </div>
+
+
+      <div class="save-card-next">
+        <span>Save card for your next order</span>
+        <ion-toggle></ion-toggle>
+      </div>
+
+    </form>
+    <div class="card-btn">
+      <button class="btn btn-theme btn-block" (click)="saveCard()">
+        Add Card
+      </button>
+    </div>
+  </div>
+
+</ion-content>

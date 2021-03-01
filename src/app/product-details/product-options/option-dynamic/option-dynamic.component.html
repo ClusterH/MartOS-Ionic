@@ -1,0 +1,17 @@
+<div class="over-flow">
+  <ion-slides [options]="options">
+    <ng-container *ngIf="hasChips">
+      <ion-slide *ngFor="let cat of children; let i=index" scrollbar="true">
+        <ion-chip class="size-wrap-chip" (click)="selectItem(cat, i)" [ngClass]="activeSize(cat)">
+          <ion-label>{{ cat.value || cat}}</ion-label>
+        </ion-chip>
+      </ion-slide>
+    </ng-container>
+    <ng-container *ngIf="!hasChips">
+      <ion-slide *ngFor="let filter of children; let i=index">
+        <ion-label [ngClass]="{'active': activeSlide===i}" (click)="selectItem(filter, i)">
+          {{ filter.name || filter}}&nbsp;</ion-label>
+      </ion-slide>
+    </ng-container>
+  </ion-slides>
+</div>

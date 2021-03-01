@@ -1,0 +1,19 @@
+<div class="sidebar">
+  <div class="hello-sign">
+    <span class="left-hello" (click)="userNavigate()">
+      <img src="../../../assets/images/sidebar-profile.png" alt="">
+      <h3>Hello, sign-in!</h3>
+    </span>
+    <span class="cross-icon">
+      <img (click)="closeMenu()" src="../../../assets/images/sidebar-cross.png" alt="">
+    </span>
+  </div>
+  <!-- <h2>Chose a category</h2> -->
+  <div class="pop-catg" *ngFor="let category of categories ">
+    <h3>{{category.name}}</h3>
+    <ul *ngFor="let item of category.values">
+      <li (click)="selectCategory(item.name)">{{item.name}}</li>
+    </ul>
+  </div>
+  <ion-button class="log-out" (click)="logout()"> Logout</ion-button>
+</div>

@@ -1,0 +1,34 @@
+.new-order-notification {
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 0;
+    p{
+        color: #515C6F;
+        font-size: 14px;
+        font-family: 'Futura LT';
+        margin: 0;
+    }
+    span.cross-order-tick {
+        padding-right: 20px;
+        img {
+            width: 12px;
+            position: relative;
+            top: 1px;
+        }
+    }
+    
+    span.go-to-order {
+        transform: rotate(180deg);
+        position: relative;
+        top: -1px;
+        padding-right: 30px;
+        display: inline-block;
+    }
+    
+    span.go-to-order img {
+        max-width: 14px;
+    }
+}

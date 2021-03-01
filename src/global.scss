@@ -1,0 +1,392 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+// futura
+
+@font-face {
+  font-family: 'Futura';
+  src: url('./assets/fonts/Futura.eot');
+  src: url('./assets/fonts/Futura.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/Futura.woff2') format('woff2'),
+    url('./assets/fonts/Futura.woff') format('woff'),
+    url('./assets/fonts/Futura.ttf') format('truetype'),
+    url('./assets/fonts/Futura.svg#Futura') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Futura Md BT';
+  src: url('./assets/fonts/FuturaBT-Medium.eot');
+  src: url('./assets/fonts/FuturaBT-Medium.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/FuturaBT-Medium.woff2') format('woff2'),
+    url('./assets/fonts/FuturaBT-Medium.woff') format('woff'),
+    url('./assets/fonts/FuturaBT-Medium.ttf') format('truetype'),
+    url('./assets/fonts/FuturaBT-Medium.svg#FuturaBT-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+@font-face {
+  font-family: 'Futura LT';
+  src: url('./assets/fonts/FuturaLT-ExtraBold.eot');
+  src: url('./assets/fonts/FuturaLT-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/FuturaLT-ExtraBold.woff2') format('woff2'),
+    url('./assets/fonts/FuturaLT-ExtraBold.woff') format('woff'),
+    url('./assets/fonts/FuturaLT-ExtraBold.ttf') format('truetype'),
+    url('./assets/fonts/FuturaLT-ExtraBold.svg#FuturaLT-ExtraBold') format('svg');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura LT';
+  src: url('./assets/fonts/FuturaLT-Bold.eot');
+  src: url('./assets/fonts/FuturaLT-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/FuturaLT-Bold.woff2') format('woff2'),
+    url('./assets/fonts/FuturaLT-Bold.woff') format('woff'),
+    url('./assets/fonts/FuturaLT-Bold.ttf') format('truetype'),
+    url('./assets/fonts/FuturaLT-Bold.svg#FuturaLT-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura LT';
+  src: url('./assets/fonts/FuturaLT-Book.eot');
+  src: url('./assets/fonts/FuturaLT-Book.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/FuturaLT-Book.woff2') format('woff2'),
+    url('./assets/fonts/FuturaLT-Book.woff') format('woff'),
+    url('./assets/fonts/FuturaLT-Book.ttf') format('truetype'),
+    url('./assets/fonts/FuturaLT-Book.svg#FuturaLT-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura LT';
+  src: url('./assets/fonts/FuturaLT-CondensedExtraBold.eot');
+  src: url('./assets/fonts/FuturaLT-CondensedExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/FuturaLT-CondensedExtraBold.woff2') format('woff2'),
+    url('./assets/fonts/FuturaLT-CondensedExtraBold.woff') format('woff'),
+    url('./assets/fonts/FuturaLT-CondensedExtraBold.ttf') format('truetype'),
+    url('./assets/fonts/FuturaLT-CondensedExtraBold.svg#FuturaLT-CondensedExtraBold') format('svg');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura LT';
+  src: url('./assets/fonts/FuturaLT-Heavy.eot');
+  src: url('./assets/fonts/FuturaLT-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/FuturaLT-Heavy.woff2') format('woff2'),
+    url('./assets/fonts/FuturaLT-Heavy.woff') format('woff'),
+    url('./assets/fonts/FuturaLT-Heavy.ttf') format('truetype'),
+    url('./assets/fonts/FuturaLT-Heavy.svg#FuturaLT-Heavy') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura LT';
+  src: url('./assets/fonts/FuturaLT-Light.eot');
+  src: url('./assets/fonts/FuturaLT-Light.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/FuturaLT-Light.woff2') format('woff2'),
+    url('./assets/fonts/FuturaLT-Light.woff') format('woff'),
+    url('./assets/fonts/FuturaLT-Light.ttf') format('truetype'),
+    url('./assets/fonts/FuturaLT-Light.svg#FuturaLT-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Futura LT';
+  src: url('./assets/fonts/FuturaLT.eot');
+  src: url('./assets/fonts/FuturaLT.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/FuturaLT.woff2') format('woff2'),
+    url('./assets/fonts/FuturaLT.woff') format('woff'),
+    url('./assets/fonts/FuturaLT.ttf') format('truetype'),
+    url('./assets/fonts/FuturaLT.svg#FuturaLT') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('./assets/fonts/AvenirNext-Medium.eot');
+  src: url('./assets/fonts/AvenirNext-Medium.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/AvenirNext-Medium.woff2') format('woff2'),
+    url('./assets/fonts/AvenirNext-Medium.woff') format('woff'),
+    url('./assets/fonts/AvenirNext-Medium.ttf') format('truetype'),
+    url('./assets/fonts/AvenirNext-Medium.svg#AvenirNext-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('./assets/fonts/AvenirNext-Bold.eot');
+  src: url('./assets/fonts/AvenirNext-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/AvenirNext-Bold.woff2') format('woff2'),
+    url('./assets/fonts/AvenirNext-Bold.woff') format('woff'),
+    url('./assets/fonts/AvenirNext-Bold.ttf') format('truetype'),
+    url('./assets/fonts/AvenirNext-Bold.svg#AvenirNext-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('./assets/fonts/SourceSansPro-Semibold.eot');
+  src: url('./assets/fonts/SourceSansPro-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/SourceSansPro-Semibold.woff2') format('woff2'),
+    url('./assets/fonts/SourceSansPro-Semibold.woff') format('woff'),
+    url('./assets/fonts/SourceSansPro-Semibold.ttf') format('truetype'),
+    url('./assets/fonts/SourceSansPro-Semibold.svg#SourceSansPro-Semibold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('./assets/fonts/SourceSansPro-Bold.eot');
+  src: url('./assets/fonts/SourceSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/SourceSansPro-Bold.woff2') format('woff2'),
+    url('./assets/fonts/SourceSansPro-Bold.woff') format('woff'),
+    url('./assets/fonts/SourceSansPro-Bold.ttf') format('truetype'),
+    url('./assets/fonts/SourceSansPro-Bold.svg#SourceSansPro-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('./assets/fonts/SourceSansPro-Regular.eot');
+  src: url('./assets/fonts/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/SourceSansPro-Regular.woff2') format('woff2'),
+    url('./assets/fonts/SourceSansPro-Regular.woff') format('woff'),
+    url('./assets/fonts/SourceSansPro-Regular.ttf') format('truetype'),
+    url('./assets/fonts/SourceSansPro-Regular.svg#SourceSansPro-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('./assets/fonts/SourceSansPro-Light.eot');
+  src: url('./assets/fonts/SourceSansPro-Light.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/SourceSansPro-Light.woff2') format('woff2'),
+    url('./assets/fonts/SourceSansPro-Light.woff') format('woff'),
+    url('./assets/fonts/SourceSansPro-Light.ttf') format('truetype'),
+    url('./assets/fonts/SourceSansPro-Light.svg#SourceSansPro-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('./assets/fonts/SourceSansPro-Black.eot');
+  src: url('./assets/fonts/SourceSansPro-Black.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/SourceSansPro-Black.woff2') format('woff2'),
+    url('./assets/fonts/SourceSansPro-Black.woff') format('woff'),
+    url('./assets/fonts/SourceSansPro-Black.ttf') format('truetype'),
+    url('./assets/fonts/SourceSansPro-Black.svg#SourceSansPro-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background-color: #F7F8FA;
+  position: relative;
+}
+
+.swiper-pagination-bullet {
+  background: #727C8E;
+  width: 6px;
+  height: 6px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #FF6969;
+}
+
+ion-icon {
+  width: 18px;
+  height: 18px;
+  color: #FF6969;
+
+  &.filled {
+    color: #FF6969;
+  }
+}
+
+
+.searxh-comp input.searchbar-input {
+  box-shadow: none;
+  color: #727C8E;
+  border-radius: 50px;
+  background: rgb(114 124 142 / 0.1);
+  padding: 10px 50px;
+}
+
+.searxh-comp .searchbar-search-icon.sc-ion-searchbar-md {
+  color: #515C6F;
+  opacity: 0.4;
+  top: 16px;
+}
+
+.searxh-comp .sc-ion-searchbar-md-h {
+  padding: 0 !important;
+  margin: 20px 0 00;
+}
+
+
+ion-content.ion-bottom-drawer-scrollable-content {
+  border-radius: 20px !important;
+}
+
+ion-bottom-drawer {
+  border-radius: 10px !important;
+  bottom: 0px !important;
+  padding: 30px 0;
+  position: relative;
+}
+
+ion-bottom-drawer:before {
+  position: absolute;
+  content: "";
+  background: #C3C2C2;
+  width: 23px;
+  height: 3px;
+  z-index: 9;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+div#background-content {
+  background: transparent !important;
+}
+
+.search input.searchbar-input,
+.search-inner input.searchbar-input {
+  box-shadow: none;
+  color: #727C8E;
+  border-radius: 50px;
+  background: white;
+  padding: 10px 50px;
+}
+
+.search input.searchbar-input {
+  height: 45px;
+  box-shadow: 0px 0px 10px #0D172433;
+}
+
+.search .searchbar-search-icon.sc-ion-searchbar-md {
+  color: #727C8E;
+  opacity: 0.4;
+  top: 16px;
+}
+
+.search-inner .sc-ion-searchbar-md-h {
+  padding: 0 !important;
+}
+
+.custom-sreach {
+  .searchbar-input-container {
+    height: 45px;
+  }
+
+  .searchbar-search-icon.sc-ion-searchbar-md {
+    color: #727C8E;
+    opacity: 1;
+    top: 13px;
+  }
+}
+
+.my-custom-modal .modal-wrapper {
+  height: 90vh;
+  width: calc(100% - 30px);
+  margin-top: auto;
+  overflow-y: auto;
+}
+
+.my-list-custom-modal .modal-wrapper {
+  height: 90vh;
+  width: calc(100% - 30px);
+  margin-top: auto;
+  overflow-y: auto;
+}
+
+ion-segment {
+  text-transform: unset;
+
+  &.no-style {
+    background: none;
+    margin-bottom: 25px;
+  }
+
+
+  ion-segment-button {
+    border-radius: 0px;
+    --indicator-box-shadow: none;
+    font-family: 'Futura LT';
+    font-size: 15px;
+    font-weight: 500;
+
+    &.segment-button-checked {
+      color: #695EFC;
+      text-decoration: underline;
+      --indicator-color: none;
+      // border-bottom: 1px solid #695EFC;
+
+    }
+  }
+}

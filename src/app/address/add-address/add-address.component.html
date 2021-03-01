@@ -1,0 +1,61 @@
+<ion-content>
+  <div class="add-shipping-wrap">
+    <app-header [label]="'Add a shipping address'"></app-header>
+    <form [formGroup]="addressForm">
+      <div class="contact-info-add shipping">
+        <h3>Shipping address</h3>
+        <div class="contact-info-fields">
+          <input type="text" formControlName="username" class=" form-control" placeholder="Jane Doe" />
+          <p *ngIf="addressForm.controls.username.hasError('required')" style=" margin: 0; padding: 0; color: #FF6969;"  >
+            We need if for your delivery</p>
+        </div>
+        <div class="contact-info-fields-flex">
+          <div class="contact-info-fields" style=" width: 25% !important;">
+            <input type="number" formControlName="indicatif" class=" form-control" placeholder="+33" />
+          </div>
+          <div class="contact-info-fields">
+            <input type="tel" formControlName="phone" class=" form-control" placeholder="07 87 67 56" />
+          </div>
+          <p *ngIf="addressForm.controls.phone.hasError('required') || addressForm.controls.indicatif.hasError('required')" 
+             style=" margin: 0; padding: 0; color: #FF6969;">
+            We need if for your delivery</p>
+        </div>
+        <div class="contact-info-fields">
+          <input type="text" formControlName="addressLine1" class=" form-control" placeholder="128 rue de rivoli" />
+          <p *ngIf="addressForm.controls.addressLine1.hasError('required')" style=" margin: 0; padding: 0; color: #FF6969;">
+             We need if for your delivery</p>
+        </div>
+        <div class="contact-info-fields-flex">
+          <div class="contact-info-fields">
+            <input type="number" formControlName="zipcode" class=" form-control" placeholder="Postal code" />
+          </div>
+          <div class="contact-info-fields">
+            <input type="text" formControlName="city" class=" form-control" placeholder="City" />
+          </div>
+          <p *ngIf="addressForm.controls.zipcode.hasError('required') || addressForm.controls.city.hasError('required')" style=" margin: 0; padding: 0; color: #FF6969;">
+            We need if for your delivery</p>
+        </div>
+        <div class="contact-info-fields">
+          <input type="text" formControlName="addressLine2" class=" form-control"
+            placeholder="Apt, suite, Unit, etc (Optional)" />
+        </div>
+        <div class="contact-info-fields">
+          <input type="text" formControlName="country" class=" form-control" placeholder="France" />
+          <p *ngIf="addressForm.controls.country.hasError('required')" style=" margin: 0; padding: 0; color: #FF6969;">
+            We need if for your delivery</p>
+        </div>
+
+      </div>
+
+      <div class="save-card">
+        <p>Save as default shipping address</p>
+        <ion-toggle color="danger" mode="ios" formControlName="defaultShipping" size="small"></ion-toggle>
+      </div>
+      <div class="add-adddrss-btn">
+        <button (click)="saveAddress()" type="submit" [disabled]="addressForm.invalid">
+          {{+addressForm.get('id').value?'Edit':'Add'}} Address
+        </button>
+      </div>
+    </form>
+  </div>
+</ion-content>

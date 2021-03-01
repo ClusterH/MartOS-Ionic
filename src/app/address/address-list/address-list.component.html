@@ -1,0 +1,27 @@
+<ion-content>
+  <div class="add-shipping-wrap">
+    <app-header label="Change Shipping address"></app-header>
+
+      <div class="address-container" >
+        <div class="address" *ngFor="let item of addresses" ngClass="{'add-selected': item.defaultShipping}" >
+          <div class="content" (click)="updateDefaultShipping(item)">
+            <p class="add-username">{{ item.username ? item.username : 'Jane Doe' }}</p>
+            <p class="add-address">{{ item.address }}</p>
+            <p class="add-city">{{ item.city }}</p>
+            <p class="add-country">{{ item.country }}</p>
+          </div>
+          <div class="actions">
+            <span class="material-icons" (click)="editAddress(item)">
+              edit
+            </span>
+          </div>
+        </div>
+      </div>
+    <div class="add-adddrss-btn">
+      <button (click)="addAddrress()">
+        Create a new Address
+      </button>
+    </div>
+  </div>
+
+</ion-content>

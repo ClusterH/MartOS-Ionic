@@ -1,0 +1,35 @@
+<div class="my-orders">
+  <app-header label="Follow my orders"></app-header>
+  <div class="follow-order-main-wrap" *ngIf="orders.length">
+    <div class="follow-orders-lists" *ngFor="let order of orders">
+      <div class="order-preview">
+        <div class="listing-orders">
+          <ul>
+            <li>
+              <div class="listing-wrap">
+                <div class="order-list-flex">
+                  <div class="order-list-left">
+                    <img [src]="order.image">
+                  </div>
+                  <div class="order-list-right">
+                    <h3>Order #{{order.id}}</h3>
+                    <p>Total: ${{order.total}}</p>
+                    <p>Delivered: {{order.deliveryDate}}</p>
+                  </div>
+                </div>
+                <div class="buttons-order">
+                  <button [routerLink]="'/follow-order/'+order.id">Follow my order <img src="../../../assets/images/back-order.png" alt=""> </button>
+                  <button (click)="follow()" >Contact the driver <img src="../../../assets/images/back-order.png" alt=""></button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="no-follow-orders" *ngIf="!orders.length" (click)="fillOrders()">
+    <p>You don’t have any orders to follow yet, check our products and start shopping with us!</p>
+    <p> <img src="../../assets/images/smile.png" alt=""> You won’t regret it!</p>
+  </div>
+</div>

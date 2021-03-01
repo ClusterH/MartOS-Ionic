@@ -1,0 +1,78 @@
+.sidebar {
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    z-index: 999;
+    background: #fff;
+    top: 0;
+    overflow-y: auto;
+    width: 300px;
+    padding: 70px 0 0 0;
+    .back-arr {
+        padding: 0 10px;
+    }
+    h2 {
+        margin: 0;
+        color: #191919;
+        font-size: 19px;
+        font-family: 'Futura Md BT';
+        padding: 40px 24px 20px;
+    }
+    .pop-catg {
+        padding: 0px 25px 15px;
+        border-top: 1px solid #d5d5d5;
+        h3 {
+            margin: 0;
+            color: #747576;
+            font-size: 12px;
+            font-family: 'Futura Md BT';
+            padding: 20px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                list-style: none;
+                color: #191919;
+                font-size: 13px;
+                padding-bottom: 11px;
+                font-family: 'Futura LT';
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+.hello-sign {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px 20px;
+    align-items: center;
+}
+
+span.left-hello img {
+    max-width: 20px;
+}
+
+span.cross-icon img {
+    max-width: 12px;
+}
+
+span.left-hello {
+    display: flex;
+    align-items: center;
+}
+
+span.left-hello h3 {
+    padding-left: 10px;
+    font-family: 'Futura';
+    font-weight: 500;
+    font-size: 18px;
+    color: #191919;
+    margin: 0;
+}
+.log-out{
+    margin-left:25px;
+}
